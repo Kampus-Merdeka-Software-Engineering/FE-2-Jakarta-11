@@ -22,6 +22,17 @@
   });
 
 
-
+  function increment(inputId) {
+    const inputElement = document.getElementById(inputId);
+    inputElement.value = parseInt(inputElement.value) + 1;
+  }
+  
+  function decrement(inputId) {
+    const inputElement = document.getElementById(inputId);
+    if (parseInt(inputElement.value) > 1) {
+      inputElement.value = parseInt(inputElement.value) - 1;
+    }
+  }
+  
 
 
