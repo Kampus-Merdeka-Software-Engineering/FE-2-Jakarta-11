@@ -4,18 +4,47 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="icon" href="assets/logojova.png" type="image/x-icon" />
   <title>JavaJoya</title>
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="CSS/style.css">
+
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="CSS/style.css" />
+
+  <!-- Favicon-->
+  <link rel="icon" href="assets/logojova.png" type="image/x-icon" />
+
+  <!-- Animate On Scroll Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Hover animation -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700&amp;display=swap'>
+
+  <!-- CSS CROWNY -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+
 </head>
+
+<script src="https://unpkg.com/feather-icons"></script>
+
 
 <body>
   <!--SECTON HEADER-->
   <section>
     <header class="header">
       <a href="" class="logo">
-        <img src="assets/logojova.png" alt="LogoJovaJoya" />
+        <img src="assets/JOVO.svg" alt="LogoJovaJoya" />
         <span class="text-logo">JavaJoya</span>
       </a>
 
@@ -26,7 +55,9 @@
         <a href="">Testimonial</a>
         <a href="">Contact Us</a>
         <button onclick="window.location.href='register.html'">
-          Sign Up
+          <span>Sign Up</span>
+          <div class="left"></div>
+          <div class="right"></div>
         </button>
       </nav>
     </header>
@@ -42,7 +73,10 @@
             placeholder="Search destination" />
           <input type="date" id="check-in" class="search-checkin" name="check-in" placeholder="Check-in" />
           <input type="date" id="check-out" class="search-checkout" name="check-out" placeholder="Check-out" />
-          <button type="button" id="search-button" class="search-bttn">Search</button>
+          <input type="number" placeholder="Rooms" class="rooms" min="1">
+          <button type="button" id="search-button" class="search-bttn">
+            <img src="assets/icon.png" alt="Search Icon" class="search-icon">
+            Search</button>
         </form>
       </div>
   </section>
@@ -61,19 +95,23 @@
   </section>
 
 
-<!--SECTION MAIN-ABOUT US-->
+  <!--SECTION MAIN-ABOUT US-->
 
   <section>
-    <div class="main-about">
+    <div class="main-about" data-aos="fade-down">
       <h4 class="main-about-txt">About Us</h4>
       <h1 class="main-about-txt2">We provide Solution to grow your business</h1>
       <div class="article-txt">
         <article class="parag">
           <p class="parag1">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
+            adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit
+            amet.
           </p>
           <p class="parag2">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit amet.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
+            adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit
+            amet.
           </p>
         </article>
         <div>
@@ -84,128 +122,172 @@
   </section>
 
 
+  <!-- IMAGE SLIDER -->
+  <section>
+
+    <div class="title-section">
+      <h3 class="text-white text-center">Layanan Kami</h3>
+    </div>
+    <div class="flex-card">
+      <div class="wrapper">
+        <i id="left" class="las la-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="assets/hotel1.jpg" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Archiepelago</h2>
+        <span class="price">$400.00 / Per night</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 13.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Jawa Apik</h2>
+            <span style="font-size: 16px;">Pengiriman Kilat Khusus Pulau Jawa</span>
+            <span style="font-size: 16px;">(Estimasi 1 Hari)</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 14.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Ex Jawa</h2>
+            <span style="font-size: 16px;">Pengiriman Cepat di Luar Pulau Jawa</span>
+            <span style="font-size: 16px;">(Estimasi 3 Hari)</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 18.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;"> 24/7</h2>
+            <span style="font-size: 16px;">Layanan pelanggan 24/7</span>
+            <span style="font-size: 16px;">Kami Siap Membantu</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 17.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Selalu dalam Langkah Anda</h2>
+            <span style="font-size: 16px;">Pantau pengiriman Anda secara digital </span>
+            <span style="font-size: 16px;">dengan pembaruan real-time yang akurat</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 16.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Pengiriman Tanpa Batas</h2>
+            <span style="font-size: 16px;">Indonesia Seluruhnya dalam Genggaman Anda!</span>
+            <span style="font-size: 16px;">Layanan untuk Seluruh Indonesia!</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="img/item 15.png" alt="img" draggable="false"></div>
+            <h2 style="font-size: 18px;">Keamanan dan Tanggung Jawab</h2>
+            <span style="font-size: 16px;">Indonesia Seluruhnya dalam Genggaman Anda!</span>
+            <span style="font-size: 16px;">Layanan untuk Seluruh Indonesia!</span>
+          </li>
+        </ul>
+        <i id="right" class="las la-angle-right"></i>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SWIPER CAROUSEL -->
+  <div class="sections">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one">
+          <span>domestic</span>
+          <div>
+            <h2>Enjoy the exotic of sunny Hawaii</h2>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              Maui, Hawaii
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--two">
+          <span>subtropical</span>
+          <div>
+            <h2>The Island of Eternal Spring</h2>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              Lanzarote, Spanien
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide--three">
+          <span>history</span>
+          <div>
+            <h2>Awesome Eiffel Tower</h2>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              Paris, France
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide--four">
+          <span>Mayans</span>
+          <div>
+            <h2>One of the safest states in Mexico</h2>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              The Yucatan, Mexico
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide--five">
+          <span>native</span>
+          <div>
+            <h2>The most popular yachting destination</h2>
+            <p>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              Whitsunday Islands, Australia
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  <script src="JS/script.js"></script>
 
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <!-- Script Animated on scroll library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <!-- Script feather icon -->
+  <script>
+    feather.replace();
+  </script>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <!-- Script Button hover animation -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+  <script src="JS/script.js"></script>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
-  <h1>mantap</h1>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
 </body>
 
-</html>
 
 </html>
