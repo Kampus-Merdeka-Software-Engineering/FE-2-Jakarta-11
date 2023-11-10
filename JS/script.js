@@ -1,31 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".swiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2,
-      slideShadows: true,
-    },
-    keyboard: {
-      enabled: true,
-    },
-    mousewheel: {
-      thresholdDelta: 70,
-    },
-    spaceBetween: 60,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
   const checkInInput = document.getElementById("check-in");
   const checkOutInput = document.getElementById("check-out");
 
@@ -175,3 +149,34 @@ questions.forEach(function(question) {
     });
 });
 
+
+
+
+
+// SWIPER 
+
+var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: true,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    thresholdDelta: 70,
+  },
+  spaceBetween: 60,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
