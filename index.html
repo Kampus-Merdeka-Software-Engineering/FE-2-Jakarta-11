@@ -32,7 +32,9 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-
+ <!-- Fontawesome CDN Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -41,7 +43,7 @@
 
 <body>
   <!--SECTON HEADER-->
-  <section>
+  <section class="section-header">
     <header class="header">
       <a href="" class="logo">
         <img src="assets/jova-4.png" alt="LogoJovaJoya" />
@@ -64,25 +66,24 @@
   </section>
 
   <!--SECTION SEARCH-->
-  <section>
-    <div class="bg-web-container">
-      <div class="bg-web" style="background-image: url('assets/web1-bg.jpg');"></div>
-      <div class="search">
-        <form class="search-form">
-          <input type="text" id="destination" class="search-destination" name="destination"
-            placeholder="Search destination" />
-          <input type="date" id="check-in" class="search-checkin" name="check-in" placeholder="Check-in" />
-          <input type="date" id="check-out" class="search-checkout" name="check-out" placeholder="Check-out" />
-          <input type="number" placeholder="Rooms" class="rooms" min="1">
-          <button type="button" id="search-button" class="search-bttn">
-            <img src="assets/icon.png" alt="Search Icon" class="search-icon">
-            Search</button>
-        </form>
-      </div>
+  <section class="section-search">
+    <div class="bg-web" style="background-image: url('assets/web1-bg.jpg');"></div>
+    <div class="search">
+      <form class="search-form">
+        <input type="text" id="destination" class="search-destination" name="destination"
+          placeholder="Search destination" />
+        <input type="date" id="check-in" class="search-checkin" name="check-in" placeholder="Check-in" />
+        <input type="date" id="check-out" class="search-checkout" name="check-out" placeholder="Check-out" />
+        <input type="number" placeholder="Rooms" class="rooms" min="1">
+        <button type="button" id="search-button" class="search-bttn">
+          <img src="assets/icon.png" alt="Search Icon" class="search-icon">
+          Search</button>
+      </form>
+    </div>
   </section>
 
   <!--SECTION MAIN-->
-  <section>
+  <section class="section-main" id="section-2">
     <div class="bg-web" style="background-image: url('assets/web1-bg.jpg');"></div>
 
     <div class="text-bg">
@@ -97,54 +98,60 @@
 
   <!--SECTION MAIN-ABOUT US-->
 
-  <section>
+  <section class="section-about-us">
+    <svg class="svg-bg-1" width="1441" height="1338" viewBox="0 0 1441 1338" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M87.1598 272C52.4306 272.256 6.10352e-05 285.821 6.10352e-05 285.821V698.5C6.10352e-05 698.5 8.68291e-05 1252.5 6.10352e-05 1338H711.16H1440.5V684V315V0.5C1440.5 0.5 1371.68 1.00011 1341.84 74.5001C1312 148 1256.59 264.698 1211.66 343.501C1184.66 374.505 1173.66 389.005 1077.66 426C981.66 462.996 847.16 331 711.16 347.5C575.16 364 631.66 438.5 485.16 428.5C338.66 418.5 223.16 271 87.1598 272Z"
+        fill="#EAF8FF"></path>
+    </svg>
     <div class="main-about" data-aos="fade-down">
       <div class="warp-aboutus">
-      <h4 class="main-about-txt">About Us</h4>
-      <h1 class="main-about-txt2">We provide Solution to grow your business</h1>
-      <div class="article-txt">
-        <article class="parag">
-          <p class="parag1">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
-            adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit
-            amet.
-          </p>
-          <p class="parag2">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
-            adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum sit
-            amet.
-          </p>
-        </article>
-        <div>
-          <button type="button" class="search-bttn3">For More >></button>
+        <h4 class="main-about-txt">About Us</h4>
+        <h1 class="main-about-txt2">Getting to Know JavaJoya More Closely</h1>
+        <div class="article-txt">
+          <article class="parag">
+            <p class="parag1">
+              Welcome to JavaJoya! We are your primary destination for an unforgettable lodging experience. With a
+              commitment to providing the best quality service and comfort for every guest, JavaJoya is your ideal
+              choice when you are on a business trip, vacation, or traveling with family and friends.
+            </p>
+            <p class="parag2">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
+              adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum
+              sit
+              amet.
+            </p>
+          </article>
+          <div>
+            <button type="button" class="search-bttn3">For More >></button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="pict-aboutus">
-      <img src="http://127.0.0.1:3000/Hotel-Booking-Design-main/Hotel%20Booking/image/a.png" alt="img">
-    <div class="bg-about"></div>
-    </div>
+      <div class="pict-aboutus">
+        <img src="http://127.0.0.1:3000/Hotel-Booking-Design-main/Hotel%20Booking/image/a.png" alt="img">
+        <div class="bg-about"></div>
+      </div>
     </div>
   </section>
 
 
   <!-- IMAGE SLIDER -->
-  <section>
-
+  <section class="section-slider">
     <div class="title-section">
       <h3 class="container-service">Most Popular Hotel</h3>
+      <div class="line"></div>
     </div>
     <div class="flex-card">
       <div class="wrapper">
         <i id="left" class="las la-angle-left"></i>
         <ul class="carousel">
-  
-          <li class="card" >
+          <li class="card">
             <div class="img"><img src="assets/hotel1.jpg" alt="img" draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
-              <div class="location-text">United States</div>
-          </div>
+              <div class="location-text">Bekasi, Jawa Barat</div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -153,17 +160,18 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">Archiepelago</h2>
-         <h3 class="price">$400.00 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">Archiepelago</h2>
+              <h3 class="price">Rp564.000 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/mDVNcCG/0001-1189359051037066092-1.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/mDVNcCG/0001-1189359051037066092-1.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Jakarta Pusat, Jakarta</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -172,17 +180,18 @@
               <div class="star"><img src="assets/star-solid.svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">Hotel Indonesia Kempinski</h2>
-         <h3 class="price">Rp2.652.151 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">Hotel Indonesia Kempinski</h2>
+              <h3 class="price">Rp2.652.151 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/r4WYDYf/0002-1189359051037066092-2.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/r4WYDYf/0002-1189359051037066092-2.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Jakarta Timur, Jakarta</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -191,17 +200,18 @@
               <div class="star"><img src="assets/star-solid.svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">Best Western Premier The Hive</h2>
-         <h3 class="price">Rp598.500 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">Best Western Premier The Hive</h2>
+              <h3 class="price">Rp598.500 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/cw9Jz2f/0003-1189359051037066092-3.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/cw9Jz2f/0003-1189359051037066092-3.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Jakarta Selatan, Jakarta</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -210,17 +220,18 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">ASTON Priority Simatupang & Conference Center</h2>
-         <h3 class="price">Rp943.000 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">ASTON Priority Simatupang</h2>
+              <h3 class="price">Rp943.000 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/NC5XScg/0004-1189359051037066092-4.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/NC5XScg/0004-1189359051037066092-4.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Cibeunying, Bandung</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -229,17 +240,18 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">ibis Styles Bandung Grand Central</h2>
-         <h3 class="price">Rp920.000 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">ibis Styles Bandung Grand Central</h2>
+              <h3 class="price">Rp920.000 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/hg1Jv1R/0005-1189359051037066092-5.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/hg1Jv1R/0005-1189359051037066092-5.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Lengkong, Bandung</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -248,17 +260,18 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">Grand Asrilia Hotel Convention & Restaurant</h2>
-         <h3 class="price">Rp622.085 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">Grand Asrilia Hotel Convention</h2>
+              <h3 class="price">Rp622.085 / <span> Per night</span></h3>
+            </div>
           </li>
 
-          <li class="card" >
-            <div class="img"><img src="https://i.ibb.co/rQVpZDN/0006-1189359051037066092-6.png" alt="img" draggable="false"></div>
+          <li class="card">
+            <div class="img"><img src="https://i.ibb.co/rQVpZDN/0006-1189359051037066092-6.png" alt="img"
+                draggable="false"></div>
             <div class="location-info">
               <div class="location-icon"><img src="assets/location-dot.svg" alt="Location Icon"></div>
               <div class="location-text">Sukajadi, Bandung</div>
-          </div>
+            </div>
             <div class="rate">
               <div class="star"><img src="assets/star-solid.svg"></div>
               <div class="star"><img src="assets/star-solid.svg"></div>
@@ -267,110 +280,225 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-            <h2 class="name-hotel" style="font-size: 18px;">Sari Ater Kamboti Hotel</h2>
-         <h3 class="price">Rp706.111 / <span> Per night</span></h3>
-        </div>
+              <h2 class="name-hotel" style="font-size: 18px;">Sari Ater Kamboti Hotel</h2>
+              <h3 class="price">Rp706.111 / <span> Per night</span></h3>
+            </div>
           </li>
-        
+
         </ul>
         <i id="right" class="las la-angle-right"></i>
       </div>
     </div>
-
+    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z" fill="#EAF8FF"></path>
+  </svg>
   </section>
 
   <!-- SWIPER CAROUSEL -->
 
-  <div class="title-section-2">
-    <h3 class="container-destination">Most Popular Destination</h3>
-  </div>
-  <div class="sections">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide--one">
-          <span>domestic</span>
-          <div>
-            <h2>Enjoy the exotic of sunny Hawaii</h2>
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              Maui, Hawaii
-            </p>
+  <section class="section-swiper">
+    <div class="title-section-2">
+      <h3 class="container-destination">Most Popular Destination</h3>
+      <div class="line"></div>
+    </div>
+    <div class="sections">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <span>domestic</span>
+            <div>
+              <h2>Enjoy the exotic of sunny Hawaii</h2>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                Maui, Hawaii
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <span>subtropical</span>
+            <div>
+              <h2>The Island of Eternal Spring</h2>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                Lanzarote, Spanien
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--three">
+            <span>history</span>
+            <div>
+              <h2>Awesome Eiffel Tower</h2>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                Paris, France
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--four">
+            <span>Mayans</span>
+            <div>
+              <h2>One of the safest states in Mexico</h2>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                The Yucatan, Mexico
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--five">
+            <span>native</span>
+            <div>
+              <h2>The most popular yachting destination</h2>
+              <p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                Whitsunday Islands, Australia
+              </p>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--two">
-          <span>subtropical</span>
-          <div>
-            <h2>The Island of Eternal Spring</h2>
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              Lanzarote, Spanien
-            </p>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z" fill="#EAF8FF"></path>
+  </svg>
+  </section>
+
+
+  <!-- HOW IT WORKS SECTION -->
+  <section class="section-works">
+    <div class="title-section">
+      <h3 class="container-service">Discover the Experience</h3>
+      <div class="line"></div>
+    </div>
+    <div class="wrapper-works">
+      <div class="content-works">
+        <div class="box-works">
+          <div class="img-1">
+            <img src="assets/destination.png" alt="">
+          </div>
+          <div class="details-works">
+            <h2>Search Multiple Destinations</h2>
+            <p>Explore Various Destinations
+              Discover a variety of travel destinations with ease. Enjoy flexibility in finding the places you want to visit.</p>
           </div>
         </div>
-
-        <div class="swiper-slide swiper-slide--three">
-          <span>history</span>
-          <div>
-            <h2>Awesome Eiffel Tower</h2>
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              Paris, France
-            </p>
+        <div class="box-works">
+          <div class="img-1">
+            <img src="assets/find.png" alt="">
+          </div>
+          <div class="details-works">
+            <h2>Find the Lowest Hotel Prices</h2>
+            <p>Get the best deals by finding the lowest hotel prices, allowing you to save more for your holiday activities.</p>
           </div>
         </div>
-
-        <div class="swiper-slide swiper-slide--four">
-          <span>Mayans</span>
-          <div>
-            <h2>One of the safest states in Mexico</h2>
-            <p>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              The Yucatan, Mexico
-            </p>
+        <div class="box-works">
+          <div class="img-1">
+            <img src="assets/hotel.png" alt="">
           </div>
-        </div>
-
-        <div class="swiper-slide swiper-slide--five">
-          <span>native</span>
-          <div>
-            <h2>The most popular yachting destination</h2>
-            <p>
-
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              Whitsunday Islands, Australia
-            </p>
+          <div class="details-works">
+            <h2>Find the Right Hotel for You</h2>
+            <p>Select a hotel that suits your preferences and needs. With a range of options, you can find the perfect accommodation for your trip.</p>
           </div>
         </div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
+  </section>
+
+
+  <!-- FOOTER SECTION -->
+
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="assets/jova-4.png" alt="LogoJovaJoya" />
+            <span class="text-logo">JavaJoya</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">App design</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Logo design</a></li>
+          <li><a href="#">Banner design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="#">Purchase</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Courses</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">JavaJoya.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
   <script src="JS/script.js"></script>
 
