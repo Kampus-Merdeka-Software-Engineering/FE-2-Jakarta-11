@@ -32,9 +32,38 @@
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
- <!-- Fontawesome CDN Link -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<!-- icon fontawesome-->
+<script src="https://kit.fontawesome.com/cf76925589.js" crossorigin="anonymous"></script>
+
+<!-- box icon -->
+<link rel="stylesheet" href="boxicons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<!-- Fetaher icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- AOS (Animate On Scrool) -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+<!-- logo tab -->
+<link rel="shortcut icon" href="assets/logo-tabb.png" type="image/x-icon">
+
+<!--style-->
+<link rel="stylesheet" href="CSS/style.css">
+
 
 </head>
 
@@ -42,34 +71,48 @@
 
 
 <body>
-  <!--SECTON HEADER-->
+  <!--SECTION NAVBAR-->
   <section class="section-header">
-    <header class="header">
-      <a href="" class="logo">
-        <img src="assets/jova-4.png" alt="LogoJovaJoya" />
-        <span class="text-logo">JavaJoya</span>
-      </a>
+    <header class="navigationn">
+      <img class="logo" src="assets/jova-4.png" alt="LogoJovaJoya" >
 
-      <nav class="navbar">
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Destination</a>
-        <a href="">Testimonial</a>
-        <a href="">Contact Us</a>
-        <button onclick="window.location.href='register.html'">
-          <span>Sign Up</span>
-          <div class="left"></div>
-          <div class="right"></div>
-        </button>
+      <nav class="navbar-menu">
+          <div class="navbar-toggle" id="navbar-toggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+
+          <ul class="nav-list">
+              <li>
+                  <a href="index.html" class="nav-link" id="btn-active">Home</a>
+              </li>
+              <li>
+                  <a href="about-us.html" class="nav-link">About Us</a>
+              </li>
+              <li>
+                  <a href="products.html" class="nav-link">Destination</a>
+              </li>
+              <li>
+                  <a href="stores.html" class="nav-link">Testimonial</a>
+              </li>
+              <li>
+                <a href="stores.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
       </nav>
-    </header>
+  </header>
   </section>
+  <!-- END SECTION NAVBAR -->
 
-  <!--SECTION SEARCH-->
-  <section class="section-search">
-    <div class="bg-web" style="background-image: url('assets/web1-bg.jpg');"></div>
-    <div class="search">
-      <form class="search-form">
+
+  <!--SECTION SEARCHING-->
+  <section class="section-search" >
+    <div class="bg-web"  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+      <img src="assets/web1-bg-1.jpg" alt="About Us"/>
+    </div>
+    <div class="search" >
+      <form class="search-form" data-aos="fade-down">
         <input type="text" id="destination" class="search-destination" name="destination"
           placeholder="Search destination" />
         <input type="date" id="check-in" class="search-checkin" name="check-in" placeholder="Check-in" />
@@ -81,12 +124,14 @@
       </form>
     </div>
   </section>
+  <!-- END SEARCHING SECTION -->
+
 
   <!--SECTION MAIN-->
-  <section class="section-main" id="section-2">
-    <div class="bg-web" style="background-image: url('assets/web1-bg.jpg');"></div>
-
-    <div class="text-bg">
+  <section class="section-main" id="section-2"
+  <div class="warp-main">
+    
+    <div class="text-bg" data-aos="fade-up" data-aos-delay="250">
       <h1 class="text-bg1">Hi, let's fulfill your holiday needs with<span>JavaJoya</span></h1>
       <div>
         <button type="button" class="search-bttn2">For More >></button>
@@ -94,10 +139,10 @@
     </div>
     </div>
   </section>
+  <!-- END SECTION MAIN -->
 
 
   <!--SECTION MAIN-ABOUT US-->
-
   <section class="section-about-us">
     <svg class="svg-bg-1" width="1441" height="1338" viewBox="0 0 1441 1338" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -130,13 +175,13 @@
       </div>
       <div class="pict-aboutus">
         <img src="http://127.0.0.1:3000/Hotel-Booking-Design-main/Hotel%20Booking/image/a.png" alt="img">
-        <div class="bg-about"></div>
       </div>
     </div>
   </section>
+  <!-- END SECTION MAIN-ABOUT-US -->
 
 
-  <!-- IMAGE SLIDER -->
+  <!-- SECTION MOST POPULAR HOTEL -->
   <section class="section-slider">
     <div class="title-section">
       <h3 class="container-service">Most Popular Hotel</h3>
@@ -289,13 +334,17 @@
         <i id="right" class="las la-angle-right"></i>
       </div>
     </div>
-    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z" fill="#EAF8FF"></path>
-  </svg>
+    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z"
+        fill="#EAF8FF"></path>
+    </svg>
   </section>
+  <!-- END SECTION MOST POPULAR HOTEL -->
 
-  <!-- SWIPER CAROUSEL -->
 
+  <!-- SECTION MOST POPULAR DESTINATION -->
   <section class="section-swiper">
     <div class="title-section-2">
       <h3 class="container-destination">Most Popular Destination</h3>
@@ -388,13 +437,17 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z" fill="#EAF8FF"></path>
-  </svg>
+    <svg class="svg-bg-2" width="1441" height="729" viewBox="0 0 1441 729" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1441 0.5V595.092C1441 595.092 1375.66 632.267 1325.45 634.588C1179.57 641.331 1079.91 521.88 900.324 553.188C776.514 574.772 800.663 727.548 632.153 728.993C556.371 729.642 486.059 687.209 423.2 657.707C381.314 638.049 280.208 594.598 222.433 605.207C164.658 615.815 171.399 637.959 108.809 684.198C46.2198 730.438 0 706.836 0 706.836V0.5H1441Z"
+        fill="#EAF8FF"></path>
+    </svg>
   </section>
+  <!-- END SECTION MOST POPULAR DESTINATION -->
 
 
-  <!-- HOW IT WORKS SECTION -->
+  <!-- SECTION DISCOVER -->
   <section class="section-works">
     <div class="title-section">
       <h3 class="container-service">Discover the Experience</h3>
@@ -409,7 +462,8 @@
           <div class="details-works">
             <h2>Search Multiple Destinations</h2>
             <p>Explore Various Destinations
-              Discover a variety of travel destinations with ease. Enjoy flexibility in finding the places you want to visit.</p>
+              Discover a variety of travel destinations with ease. Enjoy flexibility in finding the places you want to
+              visit.</p>
           </div>
         </div>
         <div class="box-works">
@@ -418,7 +472,8 @@
           </div>
           <div class="details-works">
             <h2>Find the Lowest Hotel Prices</h2>
-            <p>Get the best deals by finding the lowest hotel prices, allowing you to save more for your holiday activities.</p>
+            <p>Get the best deals by finding the lowest hotel prices, allowing you to save more for your holiday
+              activities.</p>
           </div>
         </div>
         <div class="box-works">
@@ -427,22 +482,22 @@
           </div>
           <div class="details-works">
             <h2>Find the Right Hotel for You</h2>
-            <p>Select a hotel that suits your preferences and needs. With a range of options, you can find the perfect accommodation for your trip.</p>
+            <p>Select a hotel that suits your preferences and needs. With a range of options, you can find the perfect
+              accommodation for your trip.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- END SECTION DISCOVER -->
 
 
-  <!-- FOOTER SECTION -->
-
+  <!-- FOOTER  -->
   <footer>
     <div class="content">
       <div class="top">
         <div class="logo-details">
           <img src="assets/jova-4.png" alt="LogoJovaJoya" />
-            <span class="text-logo">JavaJoya</span>
         </div>
         <div class="media-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -498,6 +553,7 @@
       </div>
     </div>
   </footer>
+  <!-- END FOOTER -->
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
   <script src="JS/script.js"></script>
@@ -517,6 +573,14 @@
   <!-- Script Button hover animation -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
   <script src="JS/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+  <script>
+      feather.replace();
+  </script>
+
 
 </body>
 
