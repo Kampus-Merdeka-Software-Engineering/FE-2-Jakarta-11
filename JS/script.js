@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return date.toLocaleDateString(undefined, options);
   }
 
-});
   
     // Tambahkan event listener untuk mengubah format tanggal saat input berubah
     checkInInput.addEventListener('input', function() {
@@ -21,8 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const selectedDate = new Date(checkOutInput.value);
       checkOutInput.value = formatDate(selectedDate);
     });
-
   
+  });
+
+
 function increment(inputId) {
   const inputElement = document.getElementById(inputId);
   inputElement.value = parseInt(inputElement.value) + 1;
