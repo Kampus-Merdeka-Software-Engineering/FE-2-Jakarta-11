@@ -709,9 +709,10 @@ header {
 }
 
 .location-info {
-  display: flex;
+  display: inline-flex;
   margin-top: 10px;
-  padding-right: 180px;
+  flex-wrap: wrap;
+
 }
 
 .location-icon {
@@ -781,8 +782,6 @@ header {
 
 .section-swiper {
   background-color: #EAF8FF;
-  border-top-left-radius: 120px;
-  border-top-right-radius: 120px;
   height: 700px;
 }
 
@@ -799,8 +798,6 @@ header {
   padding-bottom: 20px;
   padding-top: 70px;
   background-color: #EAF8FF;
-  border-top-left-radius: 120px;
-  border-top-right-radius: 120px;
 }
 
 .sections {
@@ -810,10 +807,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1e1e1e;
+  background: #fcfcfc;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
   overflow: hidden;
-  border-top-left-radius: 400px;
-  border-top-right-radius: 400px;
 }
 
 .swiper {
