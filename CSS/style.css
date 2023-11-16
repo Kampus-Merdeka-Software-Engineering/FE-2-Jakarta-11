@@ -551,6 +551,7 @@ html {
   box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
   -webkit-box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
   -moz-box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
+  padding-left: 20px;
 }
 
 /* ======END SECTION MAIN ABOUT US STYLE ======= */
