@@ -465,6 +465,10 @@ header {
   justify-content: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ======END SECTION MAIN STYLE ======= */
 
 
