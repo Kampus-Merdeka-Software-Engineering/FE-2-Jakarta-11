@@ -422,16 +422,17 @@ header {
 /* ==================== */
 
 .text-bg {
+  
   position: absolute;
   top: 370px;
-  left: 900px;
-  right: 150px;
+  left: 800px;
   text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
 
 .text-bg1 {
   margin-bottom: 50px;
+  font-size: 35px;
 }
 
 .text-bg span {
@@ -439,22 +440,29 @@ header {
   margin-left: 10px;
 }
 
-.search-bttn2 {
-  font-weight: bold;
-  font-size: 17px;
-  color: white;
-  background-color: #C7752A;
-  padding: 8px 70px;
-  border: none;
-  border-radius: 35px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, box-shadow 0.3s;
+@keyframes appearDisappear {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
 }
 
-.search-bttn2:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: white;
+.fa-chevron-down {
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #00eeff;
+  animation: appearDisappear 3s infinite;
+}
+
+.arrow-main {
+  display: flex;
+  justify-content: center;
 }
 
 /* ======END SECTION MAIN STYLE ======= */
@@ -562,7 +570,6 @@ header {
   text-align: center;
   background-color: #EAF8FF;
   padding-bottom: 20px;
-  padding-top: 70px;
 }
 
 .line {
@@ -570,7 +577,7 @@ header {
   margin: 20px auto auto;
   position: relative;
   width: 18%;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .line::after,
@@ -786,7 +793,7 @@ header {
 }
 
 .title-section-2 {
-  margin-top: 170px;
+  margin-top: 120px;
   font-size: 1.7rem;
 }
 
@@ -894,27 +901,27 @@ header {
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url(https://images.unsplash.com/photo-1556206079-747a7a424d3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80) no-repeat 50% 50% / cover;
+    url(https://rakyatempatlawang.disway.id/upload/18ee9dc9e7d5bf20d394e5a717c3d02c.jpg) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://tranquil-licorice-79e76f.netlify.app/images/dest-3.jpg") no-repeat 50% 50% / cover;
+    url("https://communication.binus.ac.id/wp-content/uploads/files/2019/01/Bedugul.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80") no-repeat 50% 50% / cover;
+    url("https://www.1001malam.com/travel/wp-content/uploads/2015/11/Candi-Prambanan1.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat 50% 50% / cover;
+    url("https://asset.kompas.com/crops/Lmq-S1VsR9wieYsrfCdDTUO4fNk=/0x0:780x520/750x500/data/photo/2021/06/21/60d0364731f74.png") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1596521864207-13d46b1a0c78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80") no-repeat 50% 50% / cover;
+    url("https://discoveringsurabaya.files.wordpress.com/2015/09/landmark1.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
