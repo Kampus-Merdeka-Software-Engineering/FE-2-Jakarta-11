@@ -104,7 +104,8 @@ header {
   position: fixed;
   width: 100%;
   height: 70px;
-  z-index: 10000;
+  z-index: 3;
+  top: 0;
 }
 
 .nav-list {
@@ -133,21 +134,16 @@ header {
 
 
 /* ========================== */
-/*  RESPONSIVE NAVBAR STYLE   */
+/* RESPONSIVE BREAKPOINTS  */
 /* ========================== */
 
-@media (max-width: 819px) {
-  header {
-    background: rgb(0, 74, 173);
-    background: linear-gradient(90deg, rgba(0, 74, 173, 1) 64%, rgba(42, 132, 216, 1) 90%);
-    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-  }
+@media screen and (max-width: 819px) {
 
+
+/* ============ */
+/* RESP NAVBAR  */
+/* ============ */
+  
   .bar {
     display: block;
     color: var(--muda);
@@ -235,7 +231,234 @@ header {
     padding-bottom: 20px;
   }
 
+
+/* ======================== */
+/*  RESP FORM SEARCH STYLE  */
+/* ======================== */
+
+
+
+.section-main  .text-bg1 {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+
+  .bg-web img {
+    margin-top: 60px;
+    width: 100%;
+    z-index: -1;
+    content: url('https://i.ibb.co/5YxmJmZ/web1-bg-2.jpg');
+  }
+  
+  .search .search-form .search-side1{
+    display: flex;
+    width: 95%;
+  }
+
+  .search-form .search-side1 .rooms{
+    width: 20%;
+  }
+
+  .search-form #search-button {
+    display: flex;
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+  
+
+  /* ================= */
+  /*  RESP MAIN ABOUT  */
+  /* ================= */
+
+  .main-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pict-aboutus img{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .flex-card .wrapper i:first-child {
+    left: -6px;
+  }
+  
+  .flex-card .wrapper i:last-child {
+    right: -6px;
+  }
+  
+  .flex-card .wrapper i {
+    transform: translateY(-65%);
+
+  }
+ 
+
+
+  
+  .section-slider {
+   background-color: #EAF8FF;
+  }
+
+  .section-about-us .svg-bg-1 {
+  height: 936px;
+  }
+
+
+  .section-swiper .svg-bg-2 {
+    height: 1083px;
+    }
+
+    .section-works {
+      background-color: #EAF8FF;
+    }
+
+    .wrapper .carousel .card {
+      height: 350px;
+    }
+
+    .section-swiper .title-section-2 {
+      padding-top: 85px;
+    }
+
+
+    .content-works .box-works {
+      height: 360px;
+      width: 220px;
+    }
+
+    .details-works p {
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+      .details-works h2 {
+      margin: 20px 0;
+    }
+
+    .wrapper-works .content-works {
+      justify-content: center;
+    }
+
 }
+
+
+/* Mobile Phone  */
+@media (max-width: 500px) {
+
+  .search .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 93px;
+    padding: 7px 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .search-form .search-side1 input {
+    margin: 0 5px;
+    font-size: 11px;
+  }
+
+  .bg-web img {
+    margin-top: 60px;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    content: url('https://i.ibb.co/n3w2hgX/Desain-tanpa-judul-2.png');
+  }
+  
+
+  .search .search-form .search-side1{
+    display: flex;
+    width: 95%;
+  }
+
+
+  .search-form .search-side1 .search-destination { 
+    width: 50%;
+    margin-left: 0px;
+  }
+
+  .search-form .search-side1 .rooms{
+    width: 20%;
+    margin-right: 0px;
+  }
+
+  
+.search-form #search-button {
+  width: 163px;
+  font-size: 13px;
+  padding: 4px 36px;
+}
+
+.search-bttn .search-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.section-main .text-bg {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+
+  .text-bg .text-bg1 {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+
+  .bg-web img {
+    width: 100%;
+  }
+
+  .content-works .box-works {
+    height: auto;
+    width: 360px;
+   }
+
+
+   .wrapper-works .content-works { 
+    grid-template-columns: none;
+   }
+
+
+   .wrapper i:first-child {
+    left: -9px;
+  }
+  
+  .wrapper i:last-child {
+    right: -9px;
+  }
+  
+  .section-about-us .main-about {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+  }
+
+
+
+
+  .wrapper .carousel .card {
+    height: 350px;
+    width: 220px;
+}
+
+.section-slider .wrapper .carousel {
+  gap: 95px;
+}
+
+}
+
+
 
 
 
@@ -311,129 +534,29 @@ header {
   margin-right: 10px;
 }
 
-/* ======END FORM SEARCH STYLE ======= */
 
-
-/* =================== */
-/*  RESPONSIVE FORM SEARCH STYLE  */
-/* =================== */
-
-/* Tablet */
-@media (max-width: 819px) {
-
-  .bg-web img {
-    margin-top: 60px;
-    width: 100%;
-    z-index: -1;
-    content: url('https://i.ibb.co/5YxmJmZ/web1-bg-2.jpg');
-  }
-  
-  .search {
-    margin-top: 88px;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .search-form {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    background-color: #20274D;
-    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
-  }
-
-  .search-destination::placeholder {
-    text-align: left;
-    padding-left: 10px;
-  }
-
-  .rooms::placeholder {
-    text-align: left;
-    padding-left: 10px;
-  }
-
-   .rooms{
-    width: 20%;
-  }
-
-  .search-destination{ 
-    width: 30%;
-  }
-
-  .search-form input {
-    padding: 10px 0px 10px 0px;
-    margin: 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #search-button {
-    display: flex;
-    font-weight: bold;
-    font-size: 13px;
-    color: white;
-    background-color: #5392F9;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 35px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  #search-button:hover {
-    background: linear-gradient(to bottom, #709AD1, #3c5f7f);
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .search-bttn {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .search-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-
-}
-
-/* Mobile Phone  */
-@media (max-width: 450px) {
-
-
-}
 
 
 /* ==================== */
 /*  SECTION MAIN STYLE  */
 /* ==================== */
 
-.text-bg {
-  
-  position: absolute;
-  top: 370px;
-  left: 800px;
-  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
-  font-weight: bold;
-}
-
 .text-bg1 {
   margin-bottom: 50px;
   font-size: 35px;
 }
+
+
+.text-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+
 
 .text-bg span {
   color: #00509D;
@@ -441,11 +564,14 @@ header {
 }
 
 @keyframes appearDisappear {
-  0%, 100% {
-      opacity: 0;
+
+  0%,
+  100% {
+    opacity: 0;
   }
+
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -485,6 +611,7 @@ html {
   margin: auto;
   width: 100%;
   height: auto;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -498,7 +625,8 @@ html {
 }
 
 .warp-aboutus {
-  width: 50%;
+  width: auto;
+  margin-right: 20px;
 }
 
 .main-about-txt {
@@ -531,10 +659,10 @@ html {
 .search-bttn3 {
   font-family: 'poppins', sans-serif;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   background-color: #C7752A;
-  padding: 8px 45px;
+  padding: 8px 15px;
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -551,7 +679,6 @@ html {
   box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
   -webkit-box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
   -moz-box-shadow: 78px 11px 0px -40px rgba(0, 74, 173, 0.75);
-  padding-left: 20px;
 }
 
 /* ======END SECTION MAIN ABOUT US STYLE ======= */
@@ -564,7 +691,7 @@ html {
 /* ================================== */
 
 .title-section {
-  margin-top: 130px;
+  padding-top: 130px;
   font-size: 1.7rem;
 }
 
@@ -694,7 +821,7 @@ html {
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
-  border: 1.5px solid #66bae3;
+  border: 2px solid #66bae3;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -707,9 +834,13 @@ html {
   height: 88%;
 }
 
-.carousel .card h2 {
+
+.card h2 {
+  font-size: 1rem;
   font-weight: 500;
-  font-size: 25px;
+}
+
+.carousel .card h2 {
   margin: 20px 0 5px;
   margin-bottom: 10px;
 }
@@ -798,7 +929,7 @@ html {
 }
 
 .title-section-2 {
-  margin-top: 120px;
+  padding-top: 120px;
   font-size: 1.7rem;
 }
 
@@ -978,7 +1109,13 @@ html {
 .details-works h2 {
   font-size: 20px;
   margin: 15px 0;
+  font-weight: 500;
 }
+
+.details-works p {
+  font-size: 14px;
+}
+
 
 /* ======END SECTION DISCOVER STYLE  ======= */
 

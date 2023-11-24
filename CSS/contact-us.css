@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.bg-web1 img {
+  width: 100%;
+  z-index: -1;
+}
+
+
+.container-bg-contact {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-40%, -10%);
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.container-bg-contact h1{ 
+  font-size: 60px;
+}
+
+.container-bg-contact p{ 
+  font-size: 35px;
+  color: #4369DF;
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
+}
+
+
+
+.item-map .contact {
+  padding: 40px;
+  background: transparent;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+.side-content .item-map {
+  height: calc(100% - 107px);
+  gap: 20px;
+}
+
+/** -------- MAP -------- */
+.item-map .map {
+  padding: 0;
+  height: 100%;
+}
+
+.item-map  .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+.form-contact {
+    margin-top: 80px;
+}
+
+.form-contact .flex {
+  display: flex;
+}
+.flex_space {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-contact .container {
+  max-width: 85%;
+  margin: auto;
+}
+
+
+.box {
+  margin: 0 0 0 30px;
+}
+
+.header-contact i{
+  color: #5392F9;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.header-contact {
+  margin-top: 120px;
+}
+
+.header-contact a {
+  color: grey;
+    font-size: 13px;
+}
+
+.input input:focus {
+  border-color: rgb(0, 170, 255);
+}
+
+.inputLast textarea:focus {
+  border-color: rgb(0, 170, 255); /* Warna border saat mendapatkan fokus */
+}
+
+.input-message {
+  margin-top: 20px;
+}
+
+/* Untuk browser berbasis WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.flex_space1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.primary-btn {
+  padding: 10px 20px;
+  background-color: #5392F9;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.primary-btn:hover {
+  background-color: #000;
+  color: white;
+}
+.secondary-btn {
+  padding: 12px 30px;
+  background-color: #4531b6;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.outline-btn {
+  padding: 12px 30px;
+  background-color: #fff;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+  border: 2px solid #000;
+}
+.secondary-btn i {
+  margin: 7px 0 0 10px;
+}
+
+.control-btn button {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.control-btn i {
+  background-color: #31b675;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+input {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+
+.row {
+  width: 50%;
+}
+.top {
+  margin-top: 100px;
+}
+.mtop {
+  margin-top: 50px;
+}
+.heading {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.heading h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.heading .line {
+  width: 18%;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 2px dashed #999999;
+  position: relative;
+}
+.heading .line::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #31b675;
+  border-radius: 50%;
+  top: -6px;
+  left: -20px;
+}
+.heading .line::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #31b675;
+  border-radius: 50%;
+  top: -6px;
+  right: -20px;
+}
+.full_container {
+  max-width: 95%;
+  margin: auto;
+}
+.main-content {
+  width: 70%;
+  border: 2px solid #66bae3;
+  border-radius: 10px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.main-content-range {
+  padding: 50px 50px;
+}
+
+.side-content-range {
+  padding: 50px 50px;
+}
+
+
+
+.side-content:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-content-range h3,
+.side-content-range p,
+.side-content-range span {
+  color: white; /* Memberi warna putih pada teks */
+}
+
+.side-content-range p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  background-color: #395886 ;
+  border: 2px solid #66bae3;
+  width: 30%;
+  margin-left: 40px;
+  height: 790px;
+  border-radius: 10px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.grid1 span {
+  font-weight:500;
+}
+
+.icon {
+  margin-top: 20px;
+}
+.icon i {
+  background: #f5f5f5;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #e7e3e3;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-content {
+    width: 100%;
+  }
+  .side-content {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+form textarea,
+form input {
+  width: 100%;
+  border: 2px solid #ececec;
+  margin-top: 10px;
+  resize: none;
+}
+.contact span {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+form span label {
+  color: crimson;
+}
+form .inputlast {
+  margin: 20px 0 20px 0;
+}
+form .primary-btn {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+.contact p {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin: 10px 0;
+}
+/*-----------side-content-----------*/
+.side-content h3 {
+  margin-bottom: 15px;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+/*-----------side-content-----------*/
+@media screen and (max-width: 768px) {
+  .contact .flex {
+    flex-direction: column;
+  }
+}
+
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.main-content p {
+    margin-bottom: 25px
+}
+
+
+
+
+@media screen and (max-width: 819px) {
+  .form-contact .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .main-content {
+    width: 100%;
+  }
+
+  .container .side-content {
+    margin-top: 35px;
+    width: 60%;
+    margin-left: 0;
+  }
+
+
+  .bg-web1 img {
+
+    width: 100%;
+    z-index: -1;
+    content: url('https://i.ibb.co/m6BxDcP/Desain-tanpa-judul-6.png');
+  }
+}
+
+
+@media screen and (max-width: 768px) { 
+
+}
+
+@media screen and (max-width: 425px) { 
+  
+}
