@@ -11,11 +11,8 @@
   <meta name="keywords" content="JavaJoya">
   <title>JavaJoya - HomePage</title>
 
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
-  <link rel="stylesheet" href="CSS/style.css">
-
-
   <!-- Styling -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
   <link rel="stylesheet" href="CSS/style.css" />
 
   <!-- Favicon-->
@@ -28,19 +25,8 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700&amp;display=swap'>
 
-  <!-- CSS CROWNY -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-
-
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-  <!-- Fontawesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
   <!--font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,8 +46,6 @@
 
   <!-- AOS (Animate On Scrool) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
-
 
 </head>
 
@@ -92,13 +76,10 @@
             <a href="products.html" class="nav-link">Gallery</a>
           </li>
           <li>
-            <a href="products.html" class="nav-link">Blog</a>
-          </li>
-          <li>
             <a href="stores.html" class="nav-link">Testimonial</a>
           </li>
           <li>
-            <a href="stores.html" class="nav-link">Contact Us</a>
+            <a href="contact-us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -114,14 +95,18 @@
     </div>
     <div class="search">
       <form class="search-form" data-aos="fade-down">
+        <div class="search-side1">
         <input type="text" id="destination" class="search-destination" name="destination"
           placeholder="Search destination" />
         <input type="date" id="check-in" class="search-checkin" name="check-in" placeholder="Check-in" />
         <input type="date" id="check-out" class="search-checkout" name="check-out" placeholder="Check-out" />
         <input type="number" placeholder="Rooms" class="rooms" min="1">
+      </div>
+      <div class="search-side2">
         <button type="button" id="search-button" class="search-bttn">
           <img src="assets/icon.png" alt="Search Icon" class="search-icon">
           Search</button>
+        </div>
       </form>
     </div>
   </section>
@@ -129,8 +114,7 @@
 
 
   <!--SECTION MAIN-->
-  <section class="section-main" id="section-2" <div class="warp-main">
-
+  <section class="section-main" id="section-2">
     <div class="text-bg" data-aos="fade-up" data-aos-delay="250">
       <h1 class="text-bg1">Hi, let's fulfill your holiday needs with<span>JavaJoya</span></h1>
     </div>
@@ -143,9 +127,8 @@
 
   <div id="main-about"></div>
 
-
   <!--SECTION MAIN-ABOUT US-->
-  <section class="section-about-us" id="main-about">
+  <section class="section-about-us">
     <svg class="svg-bg-1" width="1441" height="1338" viewBox="0 0 1441 1338" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path
@@ -163,15 +146,10 @@
               commitment to providing the best quality service and comfort for every guest, JavaJoya is your ideal
               choice when you are on a business trip, vacation, or traveling with family and friends.
             </p>
-            <p class="parag2">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur piscing elit amet consectetur
-              adipiscing elit sed et eletum nulla eu placerat felis etiam tincidunt orci lacus id varius dolor fermum
-              sit
-              amet.
-            </p>
+    
           </article>
           <div>
-            <button type="button" class="search-bttn3">For More >></button>
+            <button type="button" class="search-bttn3">Explore More >></button>
           </div>
         </div>
       </div>
@@ -207,7 +185,7 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">Archiepelago</h2>
+              <h2 class="name-hotel">Archiepelago</h2>
               <h3 class="price">Rp564.000 / <span> Per night</span></h3>
             </div>
           </li>
@@ -227,7 +205,7 @@
               <div class="star"><img src="assets/star-solid.svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">Hotel Indonesia Kempinski</h2>
+              <h2 class="name-hotel">Hotel Indonesia Kempinski</h2>
               <h3 class="price">Rp2.652.151 / <span> Per night</span></h3>
             </div>
           </li>
@@ -247,7 +225,7 @@
               <div class="star"><img src="assets/star-solid.svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">Best Western Premier The Hive</h2>
+              <h2 class="name-hotel">Best Western Premier</h2>
               <h3 class="price">Rp598.500 / <span> Per night</span></h3>
             </div>
           </li>
@@ -267,7 +245,7 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">ASTON Priority Simatupang</h2>
+              <h2 class="name-hotel">ASTON Priority Simatupang</h2>
               <h3 class="price">Rp943.000 / <span> Per night</span></h3>
             </div>
           </li>
@@ -287,7 +265,7 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">ibis Styles Bandung Grand Central</h2>
+              <h2 class="name-hotel">ibis Styles Bandung</h2>
               <h3 class="price">Rp920.000 / <span> Per night</span></h3>
             </div>
           </li>
@@ -307,7 +285,7 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">Grand Asrilia Hotel Convention</h2>
+              <h2 class="name-hotel">Grand Asrilia Hotel</h2>
               <h3 class="price">Rp622.085 / <span> Per night</span></h3>
             </div>
           </li>
@@ -327,7 +305,7 @@
               <div class="star"><img src="assets/star-regular (2).svg"></div>
             </div>
             <div class="detail-text">
-              <h2 class="name-hotel" style="font-size: 18px;">Sari Ater Kamboti Hotel</h2>
+              <h2 class="name-hotel">Sari Ater Kamboti Hotel</h2>
               <h3 class="price">Rp706.111 / <span> Per night</span></h3>
             </div>
           </li>
@@ -581,6 +559,9 @@
   <script>
     feather.replace();
   </script>
+
+
+
 
 
 </body>

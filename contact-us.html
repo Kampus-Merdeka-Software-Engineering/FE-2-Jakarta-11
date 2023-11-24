@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaJoya - Contact Us</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/contact-us.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+  <!-- Favicon-->
+  <link rel="icon" href="assets/Icon-javajoya.png" type="image/x-icon" />
+
+  <!-- Animate On Scroll Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+  <!-- icon fontawesome-->
+  <script src="https://kit.fontawesome.com/cf76925589.js" crossorigin="anonymous"></script>
+
+
+  <!-- Fetaher icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<script src="https://unpkg.com/feather-icons"></script>
+
+
+<body>
+
+
+  <!--SECTION NAVBAR-->
+  <section class="section-header">
+    <div class="bg-web1" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+      <img src="assets/contact-bg.png" alt="contact-bg" />
+    </div>
+    <div class="container-bg-contact" data-aos="fade-right" d data-aos-duration="2000" data-aos-delay="200">
+      <h1 class="text-bg1-contact">Contact Us</h1>
+      <p class="text-bg2-contact">For all your questions</p>
+    </div>
+    <div class="arrow-main">
+      <a href="#form-contact" class="fa-solid fa-chevron-down"></a>
+    </div>
+    <header class="navigationn">
+      <img class="logo" src="assets/jova-4.png" alt="LogoJovaJoya">
+
+      <nav class="navbar-menu">
+        <div class="navbar-toggle" id="navbar-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link" id="btn-active">Home</a>
+          </li>
+          <li>
+            <a href="about-us.html" class="nav-link">About Us</a>
+          </li>
+          <li>
+            <a href="products.html" class="nav-link">Gallery</a>
+          </li>
+          <li>
+            <a href="stores.html" class="nav-link">Testimonial</a>
+          </li>
+          <li>
+            <a href="contact-us.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <!-- END SECTION NAVBAR -->
+  <div id="form-contact"></div>
+
+  <section class="header-contact">
+    <div class="contact flex_space">
+      <div class="box flex_space">
+        <div class="icons"><i class="fal fa-clock"></i></div>
+        <div class="text">
+          <h4>Working Hours</h4>
+          <a href="/contact">Monday - Sunday: 9.00am to 6.00pm</a>
+        </div>
+      </div>
+
+      <div class="box flex_space">
+        <div class="icons"><i class="fas fa-phone-volume"></i></div>
+        <div class="text">
+          <h4>Call Us</h4>
+          <a href="/contact">+011 123 4567</a>
+        </div>
+      </div>
+
+      <div class="box flex_space">
+        <div class="icons"><i class="far fa-envelope"></i></div>
+        <div class="text">
+          <h4>Mail Us</h4>
+          <a href="/contact">info@exampal.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--SECTION FORM-->
+  <section class="form-contact">
+    <div class="container flex" data-aos="fade-right" data-aos-duration="2000">
+      <div class="main-content">
+        <div class="main-content-range">
+          <h2> Contact From</h2>
+          <p>Have a question? Ask us anything by filling out the form below. We'll respond promptly</p>
+          <form id="contactForm" method="POST">
+            <div class="grid1">
+              <div class="input">
+                <span>
+                  First Name
+                  <label>*</label>
+                </span>
+                <input type="text" name="fname" class="fname1" placeholder="Gojo" required>
+              </div>
+              <div class="input">
+                <span>
+                  Last Name
+                  <label>*</label>
+                </span>
+                <input type="text" name="lname"  class="lname1" placeholder="Satoru" required>
+              </div>
+              <div class="input">
+                <span>
+                  Phone Number (Optional)
+                </span>
+                <input type="number" name="phone" inputmode="numeric" id="phoneNum" pattern="[0-9]*"
+                  placeholder="(+62)81234567890">
+              </div>
+              <div class="input">
+                <span>
+                  Email
+                  <label>*</label>
+                </span>
+                <input type="email" name="email" id="email1" placeholder="sukuna@gmail.com" required>
+              </div>
+              <div class="input">
+                <span>
+                  Subject
+                  <label>*</label>
+                </span>
+                <input type="text" name="subject" class="subject1" placeholder="Help, I cannot found my hotel" required>
+              </div>
+              <div class="input">
+                <span>
+                  Your Company
+                  <label>*</label>
+                </span>
+                <input type="text" name="company" class="company1" placeholder="RevoU" required>
+              </div>
+            </div>
+            <div class="input-message">
+              <div class="input inputLast">
+                <span>
+                  Message
+                  <label>*</label>
+                </span>
+                <textarea cols="30" rows="10" name="message" placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+            <button class="primary-btn">Submit Now</button>
+          </form>
+        </div>
+      </div>
+      <div class="side-content">
+        <div class="side-content-range">
+          <h3>Visit our location</h3>
+          <p>Experience the blend of hospitality and convenience at JavaJoya's physical location, strategically nestled
+            in a prime setting to complement our seamless online services.</p>
+          <br>
+          <div class="item-map">
+            <div class="contact map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.276983007019!2d106.82385307384129!3d-6.22716549376093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4734a8de3%3A0xb2ad7eacc88d7f3e!2sRevoU!5e0!3m2!1sen!2sid!4v1694417961568!5m2!1sen!2sid"
+                style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <div class="icon">
+            <h3>Follow Us</h3>
+            <div class="flex_space1">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END SECTION FORM -->
+
+
+
+  <!-- SECTION DISPLAY FORM -->
+  <section class="show-data">
+    <div class="sign-box" id="showData">
+      <h1>Send Successfully</h1>
+      <h3>First Name :
+        <p>dss</p>
+      </h3>
+      <h3>Last Name :
+        <p>sdg</p>
+      </h3>
+      <h3>Contact Number :
+        <p>089698081164</p>
+      </h3>
+      <h3>Email :
+        <p>hilmanfatoni8@gmail.com</p>
+      </h3>
+      <h3>Subject :
+        <p>scs</p>
+      </h3>
+      <h3>Company Name:
+        <p>ada</p>
+      </h3>
+      <h3>Your Message :
+        <p>sdgsgs</p>
+      </h3>
+    </div>
+  </section>
+
+  <!-- END SECTION DISPLAY FORM -->
+
+
+
+
+  <!-- FOOTER  -->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="assets/jova-4.png" alt="LogoJovaJoya" />
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">App design</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Logo design</a></li>
+          <li><a href="#">Banner design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Prefrences</a></li>
+          <li><a href="#">Purchase</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Courses</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">JavaJoya.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  <script src="JS/script.js"></script>
+
+
+  <script>
+    feather.replace();
+  </script>
+
+
+  <!-- Script Animated on scroll library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="JS/script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        const showDataSection = document.querySelector('.show-data');
+  
+        // Function to post data to server (POST)
+        function postData(formDataObj) {
+            fetch('http://localhost:3000/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formDataObj),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Tampilkan data yang baru saja disubmit
+                const userData = formDataObj;
+                showDataSection.innerHTML = `
+                    <div class="sign-box">
+                        <h1>Send Successfully</h1>
+                        <h3>First Name: <p>${userData.fname}</p></h3>
+                        <h3>Last Name: <p>${userData.lname}</p></h3>
+                        <h3>Contact Number: <p>${userData.phone}</p></h3>
+                        <h3>Email: <p>${userData.email}</p></h3>
+                        <h3>Subject: <p>${userData.subject}</p></h3>
+                        <h3>Company Name: <p>${userData.company}</p></h3>
+                        <h3>Your Message: <p>${userData.message}</p></h3>
+                    </div>
+                `;
+  
+                // Tampilkan "SECTION DISPLAY FORM" setelah formulir dikirim
+                showDataSection.style.display = 'block';
+            })
+            .catch(error => console.error('Error posting data:', error));
+        }
+  
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+  
+            // Mendapatkan data dari formulir
+            const formData = new FormData(form);
+            const formDataObj = Object.fromEntries(formData);
+  
+            // Mengirimkan data ke server melalui API (POST) dan menampilkan di front-end
+            postData(formDataObj);
+        });
+  
+        // Sembunyikan "SECTION DISPLAY FORM" jika data sebelumnya sudah ada saat halaman dimuat
+        if (showDataSection.innerHTML.trim() !== '') {
+            showDataSection.style.display = 'none';
+        }
+  
+        // Handle event saat halaman direfresh manual
+        window.addEventListener('beforeunload', function() {
+            // Sembunyikan "SECTION DISPLAY FORM" sebelum halaman direfresh
+            showDataSection.style.display = 'none';
+        });
+    });
+  </script>
+  
+  
+  
+
+
+</body>
+
+</html>
