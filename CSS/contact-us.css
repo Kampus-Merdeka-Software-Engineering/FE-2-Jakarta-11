@@ -335,49 +335,7 @@ input {
   border: 1px solid #e7e3e3;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) {
-  .section-header .bg-web1 img {
-    margin-top: 67px;
-    width: 100%;
-    z-index: -1;
-    content: url('https://i.ibb.co/3WzQjJB/Desain-tanpa-judul-9.png');
-  }
 
-  .container .side-content {
-    height: 670px;
-  }
-  
-
-  .container-bg-contact h1 {
-    font-size: 40px;
-  }
-  .box {
-    margin: 0 0 35px 30px;
-  }
-
-  .flex_space {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .container-bg-contact p {
-    font-size: 25px;
-  }
-
- .form-contact .container {
-    max-width: 90%;
-  }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .container .main-content {
-    width: 100%;
-  }
-  .form-contact .container .side-content {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
 
 form textarea,
 form input {
@@ -419,7 +377,7 @@ figure {
   height: 100%;
 }
 /*-----------side-content-----------*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contact .flex {
     flex-direction: column;
   }
@@ -437,11 +395,11 @@ h2 {
 
 
 
-@media screen and (max-width: 819px) {
+@media (max-width: 819px) {
 
  .show-data .sign-box {
   width: 60%;
-  font-size: 13px;
+  font-size: 12px;
  }
 
   .form-contact .container {
@@ -470,7 +428,7 @@ h2 {
   
 
   .bg-web1 img {
-    margin-top: 65px;
+    margin-top: 35px;
     width: 100%;
     z-index: -1;
     content: url('https://i.ibb.co/3rCC1nD/Desain-tanpa-judul-7.png');
@@ -478,13 +436,114 @@ h2 {
 }
 
 
-@media screen and (max-width: 768px) { 
 
-}
+@media (max-width: 768px) {
+  .section-header .bg-web1 img {
+    margin-top: 67px;
+    width: 100%;
+    z-index: -1;
+    content: url('https://i.ibb.co/y0QxTvJ/Desain-tanpa-judul-10.png');
+  }
 
-@media screen and (max-width: 425px) { 
+  .container .side-content {
+    height: 670px;
+  }
   
+
+  .container-bg-contact h1 {
+    font-size: 40px;
+  }
+  .box {
+    margin: 0 0 35px 30px;
+  }
+
+  .flex_space {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-bg-contact p {
+    font-size: 25px;
+  }
+
+ .form-contact .container {
+    max-width: 90%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .main-content {
+    width: 100%;
+  }
+  .form-contact .container .side-content {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
+
+
+/*----------show-data---------*/
+@media (max-width: 768px) {
+  .show-data .sign-box {
+     width: 90%;
+     height: 425px;
+   }
+ 
+   .sign-box {
+     margin: none;
+     font-size: 12px
+     }
+ 
+     .show-data {
+       height: 410px;
+     }
+ 
+     .flex_space1 {
+       gap: 12px;
+     justify-content: flex-start;
+     }
+     
+ }
+
+
+
+ @media (max-width: 500px) {
+  .section-header .bg-web1 img {
+    width: 100%;
+    z-index: -1;
+    content: url('https://i.ibb.co/SPwWqMr/Desain-tanpa-judul-11.png');
+}
+
+.container-bg-contact h1 {
+  font-size: 30px;
+}
+
+.container-bg-contact p {
+  font-size: 20px;
+}
+
+#contactForm .grid1 {
+  display: grid;
+  grid-template-columns: none;
+  grid-gap: 17px;
+}
+
+.show-data .sign-box {
+  width: 100%;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.container .side-content {
+  height: 690px;
+}
+
+}
+
+
+
+
+
 
 
 
@@ -492,6 +551,7 @@ h2 {
   width: 50%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 40px;
+  overflow: hidden;
 }
 .forms form div {
   margin: 10px 0;
@@ -536,24 +596,7 @@ h2 {
 .show-data .sign-box {
   margin-top: 50px;
 }
-/*----------show-data---------*/
-@media screen and (max-width: 768px) {
- .show-data .sign-box {
-    width: 100%;
-    height: 425px;
-  }
 
-  .sign-box {
-    margin: none;
-    font-size: 12px
-    }
-
-    .show-data {
-      height: 410px;
-    }
-    
-    
-}
 
 
 
