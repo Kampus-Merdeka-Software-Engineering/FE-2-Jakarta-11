@@ -392,7 +392,32 @@ h2 {
     margin-bottom: 25px
 }
 
+@media (max-width: 1024px) {
+  .bg-web1 img {
+    margin-top: 71px;
+    width: 100%;
+    z-index: -1;
+  }
 
+  .side-content .item-map {
+    height: calc(70% - 107px);
+  }
+
+  .side-content-range {
+    padding: 30px 10px;
+
+  }
+
+  .side-content {
+  width: 40%;
+  height: 680px;
+  }
+
+  .icon {
+    margin-top: 60px;
+}
+
+}
 
 
 @media (max-width: 819px) {
@@ -509,6 +534,7 @@ h2 {
 
  @media (max-width: 500px) {
   .section-header .bg-web1 img {
+    margin-top: 71px;
     width: 100%;
     z-index: -1;
     content: url('https://i.ibb.co/SPwWqMr/Desain-tanpa-judul-11.png');
