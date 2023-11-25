@@ -12,11 +12,25 @@ body {
 
 
 
+.sign-box {
+  font-size: 13px;
+  height: 410px;
+}
+
+
 .bg-web1 img {
   width: 100%;
   z-index: -1;
 }
 
+form-contact .flex {
+  display: flex;
+}
+
+.form-contact .container {
+  margin: auto;
+  max-width: 85%;
+}
 
 .container-bg-contact {
   position: absolute;
@@ -125,6 +139,8 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 button {
   background: none;
@@ -279,6 +295,7 @@ input {
   text-align: justify;
 }
 
+
 .side-content {
   display: flex;
   flex-direction: column;
@@ -319,16 +336,44 @@ input {
   border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
-  .container {
+  .section-header .bg-web1 img {
+    margin-top: 67px;
+    width: 100%;
+    z-index: -1;
+    content: url('https://i.ibb.co/3WzQjJB/Desain-tanpa-judul-9.png');
+  }
+
+  .container .side-content {
+    height: 670px;
+  }
+  
+
+  .container-bg-contact h1 {
+    font-size: 40px;
+  }
+  .box {
+    margin: 0 0 35px 30px;
+  }
+
+  .flex_space {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-bg-contact p {
+    font-size: 25px;
+  }
+
+ .form-contact .container {
     max-width: 90%;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .main-content {
+  .container .main-content {
     width: 100%;
   }
-  .side-content {
+  .form-contact .container .side-content {
     width: 100%;
     margin-left: 0px;
   }
@@ -356,7 +401,7 @@ form .inputlast {
 form .primary-btn {
   margin-top: 20px;
   padding: 15px 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .contact p {
   font-size: 14px;
@@ -393,6 +438,12 @@ h2 {
 
 
 @media screen and (max-width: 819px) {
+
+ .show-data .sign-box {
+  width: 60%;
+  font-size: 13px;
+ }
+
   .form-contact .container {
     display: flex;
     flex-direction: column;
@@ -408,12 +459,21 @@ h2 {
     margin-left: 0;
   }
 
+  .container-bg-contact {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+  }
+  
 
   .bg-web1 img {
-
+    margin-top: 65px;
     width: 100%;
     z-index: -1;
-    content: url('https://i.ibb.co/m6BxDcP/Desain-tanpa-judul-6.png');
+    content: url('https://i.ibb.co/3rCC1nD/Desain-tanpa-judul-7.png');
   }
 }
 
@@ -424,4 +484,80 @@ h2 {
 
 @media screen and (max-width: 425px) { 
   
+}
+
+
+
+.sign-box {
+  width: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 40px;
+}
+.forms form div {
+  margin: 10px 0;
+}
+.forms form .flex input {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.forms p {
+  font-size: 13px;
+}
+.forms form label {
+  margin: 8px;
+}
+.forms form span {
+  margin-top: 10px;
+  color: crimson;
+  font-size: 13px;
+}
+.forms form button {
+  width: 100%;
+  margin: 20px 0;
+}
+.forms form a {
+  color: blue;
+  font-size: 13px;
+}
+
+/*----------show-data---------*/
+.show-data h1 {
+  color: #31b675;
+  margin: 0 0 20px 0;
+}
+.show-data h3 {
+  display: flex;
+}
+.show-data h3 p {
+  font-weight: 400;
+  margin-left: 5px;
+}
+.show-data .sign-box {
+  margin-top: 50px;
+}
+/*----------show-data---------*/
+@media screen and (max-width: 768px) {
+ .show-data .sign-box {
+    width: 100%;
+    height: 425px;
+  }
+
+  .sign-box {
+    margin: none;
+    font-size: 12px
+    }
+
+    .show-data {
+      height: 410px;
+    }
+    
+    
+}
+
+
+
+/* contact-us.css */
+.show-data {
+  display: none;
 }

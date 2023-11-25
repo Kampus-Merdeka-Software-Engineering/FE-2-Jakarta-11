@@ -204,3 +204,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navList.classList.remove("active");
   })
 );
+
+
+
+
+
