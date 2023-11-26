@@ -151,6 +151,14 @@ header {
 /* RESPONSIVE BREAKPOINTS  */
 /* ========================== */
 
+
+@media (max-width: 1025px) {
+
+
+
+}
+
+
 @media screen and (max-width: 819px) {
 
 
