@@ -569,6 +569,8 @@ footer .content .link-boxes {
   justify-items: start;
 }
 
+       
+
 }
 
 
@@ -579,7 +581,7 @@ footer .content .link-boxes {
 }
 
 .box {
-  margin: 0 0 38px 27px;
+  margin: 0 0 38px 17px;
 }
 
 .container .main-content {
@@ -606,7 +608,12 @@ footer .content .link-boxes {
     margin-top: 71px;
     width: 121%;
 }
+
+.box {
+  margin: 0 0 38px 27px;
 }
+}
+
 
 
 
