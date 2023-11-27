@@ -89,6 +89,14 @@ header {
   margin-left: 20px;
 }
 
+.btn-navbar span .nav-list a {
+  font-size: 18px;
+}
+
+.account-bar .nav-link {
+  display: none;
+}
+
 .navbar-toggle.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-7px, 6px);
 }
@@ -152,14 +160,10 @@ header {
 /* ========================== */
 
 
-@media (max-width: 1025px) {
 
 
 
-}
-
-
-@media screen and (max-width: 819px) {
+@media (max-width: 819px) {
 
 
 /* ============ */
@@ -168,7 +172,6 @@ header {
   
   .bar {
     display: block;
-    color: var(--muda);
     border-radius: 5px;
   }
 
@@ -259,19 +262,6 @@ header {
 /* ======================== */
 
 
-
-.section-main  .text-bg1 {
-    margin-bottom: 50px;
-    font-size: 28px;
-  }
-
-  .bg-web img {
-    margin-top: 60px;
-    width: 100%;
-    z-index: -1;
-    content: url('https://i.ibb.co/5YxmJmZ/web1-bg-2.jpg');
-  }
-  
   .search .search-form .search-side1{
     display: flex;
     width: 95%;
@@ -384,14 +374,6 @@ header {
     font-size: 11px;
   }
 
-  .bg-web img {
-    margin-top: 60px;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    content: url('https://i.ibb.co/n3w2hgX/Desain-tanpa-judul-2.png');
-  }
-  
 
   .search .search-form .search-side1{
     display: flex;
@@ -421,22 +403,6 @@ header {
   height: 15px;
   margin-right: 10px;
 }
-
-.section-main .text-bg {
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-}
-
-
-  .text-bg .text-bg1 {
-    margin-bottom: 50px;
-    font-size: 25px;
-  }
-
-  .bg-web img {
-    width: 100%;
-  }
 
   .content-works .box-works {
     height: auto;
@@ -488,10 +454,7 @@ header {
 /*  FORM SEARCH STYLE  */
 /* =================== */
 
-.bg-web img {
-  width: 100%;
-  z-index: -1;
-}
+
 
 .search {
   margin-top: 88px;
@@ -559,30 +522,74 @@ header {
 
 
 
-/* ==================== */
-/*  SECTION MAIN STYLE  */
-/* ==================== */
-
-.text-bg1 {
-  margin-bottom: 50px;
-  font-size: 35px;
+/* ================================ */
+/* STYLING SECTION 1 (GAMBAR COVER) */
+/* ================================ */
+.container-home-s-1 {
+  display: block;
+  height: 100vh;
 }
 
-
-.text-bg {
+.bg-web {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
-  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.container-home-s-1-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.container-isi-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  text-align: left;
+  justify-content: center;
+}
+
+.text-bg1-home {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 29vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.text-bg2-home {
+  text-align: left;
+  font-size: 35px;
+  font-weight: 700;
+  padding-left: 29vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 0;
 }
 
 
+.text-bg2-home span {
+  color: #004AAD;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
 
-.text-bg span {
-  color: #00509D;
-  margin-left: 10px;
+.position-text {
+  padding-top: 29vh;
 }
 
 @keyframes appearDisappear {
@@ -617,8 +624,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ======END SECTION MAIN STYLE ======= */
 
+/* ===================================== */
+/* END STYLING SECTION 1 (GAMBAR COVER)  */
+/* ===================================== */
 
 
 
