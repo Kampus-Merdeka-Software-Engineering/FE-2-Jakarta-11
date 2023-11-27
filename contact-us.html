@@ -26,29 +26,18 @@
 
   <!-- Fetaher icon -->
   <script src="https://unpkg.com/feather-icons"></script>
+  
 </head>
-
-<script src="https://unpkg.com/feather-icons"></script>
 
 
 <body>
 
 
+
   <!--SECTION NAVBAR-->
   <section class="section-header">
-    <div class="bg-web1" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
-      <img src="assets/contact-bg.png" alt="contact-bg" />
-    </div>
-    <div class="container-bg-contact" data-aos="fade-right" d data-aos-duration="2000" data-aos-delay="200">
-      <h1 class="text-bg1-contact">Contact Us</h1>
-      <p class="text-bg2-contact">For all your questions</p>
-    </div>
-    <div class="arrow-main">
-      <a href="#form-contact" class="fa-solid fa-chevron-down"></a>
-    </div>
     <header class="navigationn">
       <img class="logo" src="assets/jova-4.png" alt="LogoJovaJoya">
-
       <nav class="navbar-menu">
         <div class="navbar-toggle" id="navbar-toggle">
           <div class="bar"></div>
@@ -77,36 +66,50 @@
     </header>
   </section>
   <!-- END SECTION NAVBAR -->
-  <div id="form-contact"></div>
 
-  <section class="header-contact">
+
+  <!-- SECTION 1 (GAMBAR COVER) -->
+  <section class="container-contact-s-1">
+    <img class="bg-web1" src="assets/contact-bg.png" alt="contact-bg" data-aos="fade-down" data-aos-duration="2000"
+      data-aos-delay="200" />
+    <div class="container-contact-s-1-1">
+      <div class="container-isi-contact" data-aos="fade-right" d data-aos-duration="2000" data-aos-delay="200">
+        <h1 class="text-bg1">Contact Us</h1>
+        <p class="text-bg2">For all your questions</p>
+      </div>
+      <a href="#form-contact" class="fa-solid fa-chevron-down"></a>
+    </div>
+  </section>
+  <!-- END SECTION 1 (GAMBAR COVER) -->
+
+
+  <!-- SECTION HEADER CONTACT -->
+  <section id="form-contact" class="header-contact">
     <div class="form-contact flex_space">
       <div class="box flex_space">
         <div class="icons"><i class="fal fa-clock"></i></div>
-        <div class="text">
+        <div>
           <h4>Working Hours</h4>
           <a href="/contact">Monday - Sunday: 9.00am to 6.00pm</a>
         </div>
       </div>
-
       <div class="box flex_space">
         <div class="icons"><i class="fas fa-phone-volume"></i></div>
-        <div class="text">
+        <div>
           <h4>Call Us</h4>
           <a href="/contact">+011 123 4567</a>
         </div>
       </div>
-
       <div class="box flex_space">
         <div class="icons"><i class="far fa-envelope"></i></div>
-        <div class="text">
+        <div>
           <h4>Mail Us</h4>
           <a href="/contact">info@exampal.com</a>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- END SECTION HEADER CONTACT -->
 
 
   <!--SECTION FORM-->
@@ -130,7 +133,7 @@
                   Last Name
                   <label>*</label>
                 </span>
-                <input type="text" name="lname"  class="lname" placeholder="Satoru" required>
+                <input type="text" name="lname" class="lname" placeholder="Satoru" required>
               </div>
               <div class="input">
                 <span>
@@ -171,37 +174,35 @@
               </div>
             </div>
             <button class="primary-btn">Submit Now</button>
-           
-            <!-- SECTION DISPLAY FORM -->
-           
-  <section class="show-data">
-    <div class="sign-box" id="showData">
-      <h1>Send Successfully</h1>
-      <h3>First Name :
-        <p>dss</p>
-      </h3>
-      <h3>Last Name :
-        <p>sdg</p>
-      </h3>
-      <h3>Contact Number :
-        <p>089698081164</p>
-      </h3>
-      <h3>Email :
-        <p>hilmanfatoni8@gmail.com</p>
-      </h3>
-      <h3>Subject :
-        <p>scs</p>
-      </h3>
-      <h3>Company Name:
-        <p>ada</p>
-      </h3>
-      <h3>Your Message :
-        <p>sdgsgs</p>
-      </h3>
-    </div>
-  </section>
 
-  <!-- END SECTION DISPLAY FORM -->
+            <!-- SECTION DISPLAY FORM -->
+            <section class="show-data">
+              <div class="sign-box" id="showData">
+                <h1>Send Successfully</h1>
+                <h3>First Name :
+                  <p>dss</p>
+                </h3>
+                <h3>Last Name :
+                  <p>sdg</p>
+                </h3>
+                <h3>Contact Number :
+                  <p>089698081164</p>
+                </h3>
+                <h3>Email :
+                  <p>hilmanfatoni8@gmail.com</p>
+                </h3>
+                <h3>Subject :
+                  <p>scs</p>
+                </h3>
+                <h3>Company Name:
+                  <p>ada</p>
+                </h3>
+                <h3>Your Message :
+                  <p>sdgsgs</p>
+                </h3>
+              </div>
+            </section>
+            <!-- END SECTION DISPLAY FORM -->
           </form>
         </div>
       </div>
@@ -238,7 +239,7 @@
 
 
 
- 
+
 
 
 
@@ -308,6 +309,8 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
   <script src="JS/script.js"></script>
+  <script src="JS/contact.js"></script>
+
 
 
   <script>
@@ -322,11 +325,9 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="JS/script.js"></script>
-  <script src="JS/contact.js"></script>
+ 
 
 
-  
 
 
 </body>
