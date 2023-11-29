@@ -120,7 +120,6 @@ header {
   align-items: center;
   padding: 10px;
   padding-right: 25px;
-  background-color: var(--primary);
   position: fixed;
   width: 100%;
   height: 70px;
@@ -158,12 +157,40 @@ header {
 /* ========================== */
 /* RESPONSIVE BREAKPOINTS  */
 /* ========================== */
+@media screen and (min-width: 818px) and (max-width: 995px) {
+  .main-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pict-aboutus img{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 995px){
+  .search .search-form .search-side1 {
+    display: flex;
+    width: 95%;
+  }
+
+  .search-form .search-side1 .rooms{
+    width: 20%;
+  }
+
+  .search-form #search-button {
+    display: flex;
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+}
 
 
 
-
-
-@media (max-width: 819px) {
+@media screen and (max-width: 819px) {
 
 
 /* ============ */
@@ -261,10 +288,19 @@ header {
 /*  RESP FORM SEARCH STYLE  */
 /* ======================== */
 
+.search .search-form {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  padding-top: 10px;
+  width: 89%;
+}
 
   .search .search-form .search-side1{
     display: flex;
     width: 95%;
+    padding-bottom: 10px;
   }
 
   .search-form .search-side1 .rooms{
@@ -275,6 +311,7 @@ header {
     display: flex;
     font-size: 13px;
     padding: 10px 25px;
+    justify-content: center;
   }
   
 
@@ -348,9 +385,17 @@ header {
       margin: 20px 0;
     }
 
-    .wrapper-works .content-works {
+    .content-works .box-works {
+      height: auto;
+      width: 360px;
+     }
+  
+  
+     .wrapper-works .content-works { 
       justify-content: center;
-    }
+      grid-template-columns: none;
+     }
+  
 
 }
 
@@ -378,6 +423,7 @@ header {
   .search .search-form .search-side1{
     display: flex;
     width: 95%;
+    padding-bottom: 0px;
   }
 
 
@@ -1459,3 +1505,42 @@ footer .bottom-details .bottom_text {
 }
 
 /* ====== END RESPONSIVE FOOTER STYLE  ====== */
+
+
+/* text responsive */
+
+@media screen and (max-width: 800px ) {
+  .text-bg1-home {
+    font-size: 30px;
+  }
+
+  .text-bg2-home {
+    font-size: 30px;
+  }
+
+  .text-bg2-home span {
+    font-size: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 600px ) {
+
+
+  .text-bg1-home {
+    font-size: 26px;
+    padding-left: 35px;
+  }
+  .text-bg2-home {
+    font-size: 26px;
+    padding-left: 35px;
+  }
+
+  .text-bg2-home span {
+    font-size: 26px;
+  }
+
+}
+
+
+
