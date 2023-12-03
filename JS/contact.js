@@ -12,27 +12,28 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   };
 
   fetch('https://magenta-rose-raven-hat.cyclic.app/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        if (data.contact) {
-            updateDisplayForm(data.contact);
-        }
-        console.log('Success:', data);
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+  })
+  .then(data => {
+      if (data.contact) {
+          updateDisplayForm(data.contact);
+          sessionStorage.setItem('contactData', JSON.stringify(data.contact));
+      }
+      console.log('Success:', data);
+  })
+  .catch((error) => {
+      console.error('Error:', error);
+  });
 });
 
 function updateDisplayForm(contact) {
@@ -44,3 +45,10 @@ function updateDisplayForm(contact) {
   document.getElementById('displayCompany').textContent = contact.company;
   document.getElementById('displayMessage').textContent = contact.message;
 }
+
+window.onload = () => {
+  const savedData = JSON.parse(sessionStorage.getItem('contactData'));
+  if (savedData) {
+      updateDisplayForm(savedData);
+  }
+};
