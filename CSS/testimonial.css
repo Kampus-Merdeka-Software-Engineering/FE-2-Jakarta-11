@@ -44,7 +44,7 @@ body {
     border-radius: 15px; /* Melengkungkan sudut kotak */
     transition: transform 0.3s;
     margin: 10px 0; /* Menambahkan jarak antara kotak */
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
 .testimonial:hover {

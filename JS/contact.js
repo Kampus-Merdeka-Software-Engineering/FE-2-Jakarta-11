@@ -1,47 +1,46 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contactForm');
-    const showDataSection = document.querySelector('.show-data');
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+  const data = {
+      firstName: document.getElementById('fname').value,
+      lastName: document.getElementById('lname').value,
+      phoneNumber: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      company: document.getElementById('company').value,
+      message: document.querySelector('textarea[name="message"]').value
+  };
 
-        // Constructing the form data object
-        const formDataObj = {
-            'First Name': document.querySelector('.fname').value,
-            'Last Name': document.querySelector('.lname').value,
-            'Contact Number': document.querySelector('#phoneNum').value,
-            Email: document.querySelector('#email').value,
-            Subject: document.querySelector('.subject').value,
-            'Company Name': document.querySelector('.company1').value,
-            Message: document.querySelector('textarea[name="message"]').value
-        };
-
-        // Sending data to the server
-        fetch('https://magenta-rose-raven-hat.cyclic.app/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formDataObj),
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Display the response data without the ID
-            const userData = data.data;
-            showDataSection.innerHTML = `
-                <div class="sign-box">
-                    <h1>Send Successfully</h1>
-                    <h3>First Name: <p>${userData['First Name']}</p></h3>
-                    <h3>Last Name: <p>${userData['Last Name']}</p></h3>
-                    <h3>Contact Number: <p>${userData['Contact Number']}</p></h3>
-                    <h3>Email: <p>${userData.Email}</p></h3>
-                    <h3>Subject: <p>${userData.Subject}</p></h3>
-                    <h3>Company Name: <p>${userData['Company Name']}</p></h3>
-                    <h3>Your Message: <p>${userData.Message}</p></h3>
-                </div>
-            `;
-            showDataSection.style.display = 'block';
-        })
-        .catch(error => console.error('Error:', error));
+  fetch('https://magenta-rose-raven-hat.cyclic.app/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.contact) {
+            updateDisplayForm(data.contact);
+        }
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
     });
 });
+
+function updateDisplayForm(contact) {
+  document.getElementById('displayFirstName').textContent = contact.firstName;
+  document.getElementById('displayLastName').textContent = contact.lastName;
+  document.getElementById('displayPhoneNumber').textContent = contact.phoneNumber;
+  document.getElementById('displayEmail').textContent = contact.email;
+  document.getElementById('displaySubject').textContent = contact.subject;
+  document.getElementById('displayCompany').textContent = contact.company;
+  document.getElementById('displayMessage').textContent = contact.message;
+}
