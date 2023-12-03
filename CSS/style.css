@@ -163,7 +163,7 @@ header {
     flex-direction: column;
   }
 
-  .pict-aboutus img{
+  .pict-aboutus img {
     margin-top: 30px;
     width: 100%;
   }
@@ -171,13 +171,13 @@ header {
 }
 
 
-@media (max-width: 995px){
+@media (max-width: 995px) {
   .search .search-form .search-side1 {
     display: flex;
     width: 95%;
   }
 
-  .search-form .search-side1 .rooms{
+  .search-form .search-side1 .rooms {
     width: 20%;
   }
 
@@ -193,10 +193,10 @@ header {
 @media screen and (max-width: 819px) {
 
 
-/* ============ */
-/* RESP NAVBAR  */
-/* ============ */
-  
+  /* ============ */
+  /* RESP NAVBAR  */
+  /* ============ */
+
   .bar {
     display: block;
     border-radius: 5px;
@@ -284,26 +284,26 @@ header {
   }
 
 
-/* ======================== */
-/*  RESP FORM SEARCH STYLE  */
-/* ======================== */
+  /* ======================== */
+  /*  RESP FORM SEARCH STYLE  */
+  /* ======================== */
 
-.search .search-form {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-  padding-top: 10px;
-  width: 89%;
-}
+  .search .search-form {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    padding-top: 10px;
+    width: 89%;
+  }
 
-  .search .search-form .search-side1{
+  .search .search-form .search-side1 {
     display: flex;
     width: 95%;
     padding-bottom: 10px;
   }
 
-  .search-form .search-side1 .rooms{
+  .search-form .search-side1 .rooms {
     width: 20%;
   }
 
@@ -313,7 +313,7 @@ header {
     padding: 10px 25px;
     justify-content: center;
   }
-  
+
 
   /* ================= */
   /*  RESP MAIN ABOUT  */
@@ -324,7 +324,7 @@ header {
     flex-direction: column;
   }
 
-  .pict-aboutus img{
+  .pict-aboutus img {
     margin-top: 30px;
     width: 100%;
   }
@@ -332,70 +332,70 @@ header {
   .flex-card .wrapper i:first-child {
     left: -6px;
   }
-  
+
   .flex-card .wrapper i:last-child {
     right: -6px;
   }
-  
+
   .flex-card .wrapper i {
     transform: translateY(-65%);
 
   }
- 
 
 
-  
+
+
   .section-slider {
-   background-color: #EAF8FF;
+    background-color: #EAF8FF;
   }
 
   .section-about-us .svg-bg-1 {
-  height: 936px;
+    height: 936px;
   }
 
 
   .section-swiper .svg-bg-2 {
     height: 1083px;
-    }
+  }
 
-    .section-works {
-      background-color: #EAF8FF;
-    }
+  .section-works {
+    background-color: #EAF8FF;
+  }
 
-    .wrapper .carousel .card {
-      height: 350px;
-    }
+  .wrapper .carousel .card {
+    height: 350px;
+  }
 
-    .section-swiper .title-section-2 {
-      padding-top: 85px;
-    }
+  .section-swiper .title-section-2 {
+    padding-top: 85px;
+  }
 
 
-    .content-works .box-works {
-      height: 360px;
-      width: 220px;
-    }
+  .content-works .box-works {
+    height: 360px;
+    width: 220px;
+  }
 
-    .details-works p {
-      text-align: center;
-      font-size: 13.5px;
-    }
+  .details-works p {
+    text-align: center;
+    font-size: 13.5px;
+  }
 
-      .details-works h2 {
-      margin: 20px 0;
-    }
+  .details-works h2 {
+    margin: 20px 0;
+  }
 
-    .content-works .box-works {
-      height: auto;
-      width: 360px;
-     }
-  
-  
-     .wrapper-works .content-works { 
-      justify-content: center;
-      grid-template-columns: none;
-     }
-  
+  .content-works .box-works {
+    height: auto;
+    width: 360px;
+  }
+
+
+  .wrapper-works .content-works {
+    justify-content: center;
+    grid-template-columns: none;
+  }
+
 
 }
 
@@ -420,55 +420,47 @@ header {
   }
 
 
-  .search .search-form .search-side1{
+  .search .search-form .search-side1 {
     display: flex;
     width: 95%;
     padding-bottom: 0px;
   }
 
 
-  .search-form .search-side1 .search-destination { 
+  .search-form .search-side1 .search-destination {
     width: 50%;
     margin-left: 0px;
   }
 
-  .search-form .search-side1 .rooms{
+  .search-form .search-side1 .rooms {
     width: 20%;
     margin-right: 0px;
   }
 
-  
-.search-form #search-button {
-  width: 163px;
-  font-size: 13px;
-  padding: 4px 36px;
-}
 
-.search-bttn .search-icon {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
+  .search-form #search-button {
+    width: 163px;
+    font-size: 13px;
+    padding: 4px 36px;
+  }
+
+  .search-bttn .search-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
 
   .content-works .box-works {
     height: auto;
     width: 360px;
-   }
+  }
 
 
-   .wrapper-works .content-works { 
+  .wrapper-works .content-works {
     grid-template-columns: none;
-   }
+  }
 
 
-   .wrapper i:first-child {
-    left: -9px;
-  }
-  
-  .wrapper i:last-child {
-    right: -9px;
-  }
-  
   .section-about-us .main-about {
     margin-left: 35px;
     margin-right: 35px;
@@ -479,16 +471,55 @@ header {
   }
 
 
-
-
   .wrapper .carousel .card {
     height: 350px;
     width: 220px;
+  }
+
+  .section-slider .wrapper .carousel {
+    gap: 95px;
+  }
+
+  .section-about-us .svg-bg-1 {
+    height: 1096px;
 }
 
-.section-slider .wrapper .carousel {
-  gap: 95px;
+.main-about .pict-aboutus {
+  box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+  -webkit-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+  -moz-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
 }
+
+}
+
+/* Mobile Phone  */
+@media (max-width: 426px) {
+
+  .section-slider .wrapper .carousel {
+    gap: 130px;
+  }
+
+  .wrapper .carousel .card {
+    width: 240px;
+  }
+
+  .wrapper i:first-child {
+    left: -9px;
+  }
+
+  .wrapper i:last-child {
+    right: -9px;
+  }
+
+  .flex-card .wrapper i {
+    transform: translateY(-80%);
+  }
+
+ .main-about .pict-aboutus {
+    box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+    -webkit-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+    -moz-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+  }
 
 }
 
@@ -608,9 +639,9 @@ header {
   text-align: left;
   font-size: 40px;
   font-weight: 700;
-  padding-left: 29vh;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  padding-left: 99vh;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 4px 2px rgba(255, 254, 254, 0.6);
   margin: 0;
 }
 
@@ -618,16 +649,16 @@ header {
   text-align: left;
   font-size: 35px;
   font-weight: 700;
-  padding-left: 29vh;
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  padding-left: 99vh;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
 
 .text-bg2-home span {
   color: #004AAD;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 4px 2px rgba(255, 255, 255, 0.6);
   text-align: left;
   font-size: 35px;
   font-weight: 700;
@@ -1500,7 +1531,7 @@ footer .bottom-details .bottom_text {
     width: 100%;
   }
 
- 
+
 
 }
 
@@ -1509,38 +1540,120 @@ footer .bottom-details .bottom_text {
 
 /* text responsive */
 
-@media screen and (max-width: 800px ) {
+
+
+
+@media screen and  (max-width: 991px) {
+   .text-bg1-home {
+    font-size: 35px;
+    padding-left: 74vh;
+  }
+
+  .text-bg2-home {
+    font-size: 35px;
+    padding-left: 74vh;
+  }
+
+  .text-bg2-home span {
+    font-size: 35px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
   .text-bg1-home {
     font-size: 30px;
+    padding-left: 55vh;
   }
 
   .text-bg2-home {
     font-size: 30px;
+    padding-left: 55vh;
   }
 
   .text-bg2-home span {
     font-size: 30px;
   }
-  
+
 }
 
-@media screen and (max-width: 600px ) {
-
+@media screen and  (max-width: 600px) {
 
   .text-bg1-home {
     font-size: 26px;
-    padding-left: 35px;
+    padding-left: 35vh;
   }
+
   .text-bg2-home {
     font-size: 26px;
-    padding-left: 35px;
+    padding-left: 35vh;
   }
 
   .text-bg2-home span {
     font-size: 26px;
   }
-
 }
 
+@media screen and  (max-width: 550px) {
+  .text-bg1-home {
+    font-size: 26px;
+    padding-left: 30vh;
+  }
 
+  .text-bg2-home {
+    font-size: 26px;
+    padding-left: 30vh;
+  }
 
+  .text-bg2-home span {
+    font-size: 26px;
+  }
+}
+
+@media screen and  (max-width: 500px) {
+  .text-bg1-home {
+    font-size: 26px;
+    padding-left: 20vh;
+  }
+
+  .text-bg2-home {
+    font-size: 26px;
+    padding-left: 20vh;
+  }
+
+  .text-bg2-home span {
+    font-size: 26px;
+  }
+}
+
+@media screen and  (max-width: 450px) {
+  .text-bg1-home {
+    font-size: 26px;
+    padding-left: 10vh;
+  }
+
+  .text-bg2-home {
+    font-size: 26px;
+    padding-left: 10vh;
+  }
+
+  .text-bg2-home span {
+    font-size: 26px;
+  }
+}
+
+@media screen and  (max-width: 400px) {
+  .text-bg1-home {
+    font-size: 22px;
+    padding-left: 10vh;
+  }
+
+  .text-bg2-home {
+    font-size: 22px;
+    padding-left: 10vh;
+  }
+
+  .text-bg2-home span {
+    font-size: 22px;
+  }
+}

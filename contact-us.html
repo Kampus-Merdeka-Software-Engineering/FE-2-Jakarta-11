@@ -26,7 +26,7 @@
 
   <!-- Fetaher icon -->
   <script src="https://unpkg.com/feather-icons"></script>
-  
+
 </head>
 
 
@@ -119,27 +119,27 @@
         <div class="main-content-range">
           <h2> Contact From</h2>
           <p>Have a question? Ask us anything by filling out the form below. We'll respond promptly</p>
-          <form id="contactForm" method="POST">
+          <form id="contactForm" method="POST" action="/contact/submit">
             <div class="grid1">
               <div class="input">
                 <span>
                   First Name
                   <label>*</label>
                 </span>
-                <input type="text" name="fname" class="fname" placeholder="Gojo" required>
+                <input type="text" name="fname" id="fname" class="fname" placeholder="Gojo" required>
               </div>
               <div class="input">
                 <span>
                   Last Name
                   <label>*</label>
                 </span>
-                <input type="text" name="lname" class="lname" placeholder="Satoru" required>
+                <input type="text" name="lname" id="lname" class="lname" placeholder="Satoru" required>
               </div>
               <div class="input">
                 <span>
                   Phone Number
                 </span>
-                <input type="number" name="phone" inputmode="numeric" id="phoneNum" pattern="[0-9]*"
+                <input type="number" name="phone" inputmode="numeric" id="phone" pattern="[0-9]*"
                   placeholder="(+62)81234567890">
               </div>
               <div class="input">
@@ -154,14 +154,15 @@
                   Subject
                   <label>*</label>
                 </span>
-                <input type="text" name="subject" class="subject" placeholder="Help, I cannot found my hotel" required>
+                <input type="text" name="subject" id="subject" class="subject"
+                  placeholder="Help, I cannot found my hotel" required>
               </div>
               <div class="input">
                 <span>
                   Your Company
                   <label>*</label>
                 </span>
-                <input type="text" name="company" class="company1" placeholder="RevoU" required>
+                <input type="text" name="company" id="company" class="company" placeholder="RevoU" required>
               </div>
             </div>
             <div class="input-message">
@@ -179,27 +180,13 @@
             <section class="show-data">
               <div class="sign-box" id="showData">
                 <h1>Send Successfully</h1>
-                <h3>First Name :
-                  <p>dss</p>
-                </h3>
-                <h3>Last Name :
-                  <p>sdg</p>
-                </h3>
-                <h3>Contact Number :
-                  <p>089698081164</p>
-                </h3>
-                <h3>Email :
-                  <p>hilmanfatoni8@gmail.com</p>
-                </h3>
-                <h3>Subject :
-                  <p>scs</p>
-                </h3>
-                <h3>Company Name:
-                  <p>ada</p>
-                </h3>
-                <h3>Your Message :
-                  <p>sdgsgs</p>
-                </h3>
+                <h3>First Name : <span id="displayFirstName"></span></h3>
+                <h3>Last Name : <span id="displayLastName"></span></h3>
+                <h3>Contact Number : <span id="displayPhoneNumber">089698081164</span></h3>
+                <h3>Email : <span id="displayEmail"></span></h3>
+                <h3>Subject : <span id="displaySubject"></span></h3>
+                <h3>Company Name: <span id="displayCompany"></span></h3>
+                <h3>Your Message : <span id="displayMessage"></span></h3>
               </div>
             </section>
             <!-- END SECTION DISPLAY FORM -->
@@ -234,7 +221,7 @@
         </div>
       </div>
     </div>
-  
+
   </section>
   <!-- END SECTION FORM -->
 
@@ -307,7 +294,7 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
   <script src="JS/script.js"></script>
   <script src="JS/contact.js"></script>
@@ -326,7 +313,7 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- 
+
 
 
 

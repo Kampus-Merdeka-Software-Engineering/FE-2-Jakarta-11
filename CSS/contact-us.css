@@ -110,7 +110,7 @@ body {
 
 .flex_space {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .box {
@@ -522,6 +522,8 @@ h2 {
     justify-content: flex-end;
     justify-items: start;
   }
+  
+
 
 }
 
