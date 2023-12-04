@@ -1,38 +1,42 @@
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+  const submitForm = async () => {
+      try {
+          const formData = {
+              fname: document.getElementById('fname').value,
+              lname: document.getElementById('lname').value,
+              phone: document.getElementById('phone').value,
+              email: document.getElementById('email').value,
+              subject: document.getElementById('subject').value,
+              company: document.getElementById('company').value,
+              message: document.getElementById('message').value,
+          };
 
-  const data = {
-    firstName: document.getElementById('fname').value,
-    lastName: document.getElementById('lname').value,
-    phoneNumber: document.getElementById('phone').value,
-    email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value,
-    company: document.getElementById('company').value,
-    message: document.querySelector('textarea[name="message"]').value
+          const response = await axios.post('magenta-rose-raven-hat.cyclic.app/api/contact/submit', formData);
+
+          updateDisplay(response.data);
+      } catch (error) {
+          console.error(error);
+          // Handle error accordingly, e.g., show an error message to the user
+      }
   };
 
-  // Menggunakan Axios untuk mengirim data ke backend
-  axios.post('https://magenta-rose-raven-hat.cyclic.app/contact', data)
-    .then(response => {
-      console.log('Success:', response.data);
-      // Memperbarui UI untuk menampilkan data yang disubmit
-      updateUI(response.data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-});
+  const updateDisplay = (data) => {
+      document.getElementById('displayFirstName').innerText = data.fname;
+      document.getElementById('displayLastName').innerText = data.lname;
+      document.getElementById('displayPhoneNumber').innerText = data.phone;
+      document.getElementById('displayEmail').innerText = data.email;
+      document.getElementById('displaySubject').innerText = data.subject;
+      document.getElementById('displayCompany').innerText = data.company;
+      document.getElementById('displayMessage').innerText = data.message;
 
-function updateUI(data) {
-  // Memperbarui elemen-elemen di "SECTION DISPLAY FORM" sesuai data yang disubmit
-  document.getElementById('showData').innerHTML = `
-    <h1>Send Successfully</h1>
-    <h3>First Name: <p>${data.firstName}</p></h3>
-    <h3>Last Name: <p>${data.lastName}</p></h3>
-    <h3>Contact Number: <p>${data.phoneNumber}</p></h3>
-    <h3>Email: <p>${data.email}</p></h3>
-    <h3>Subject: <p>${data.subject}</p></h3>
-    <h3>Company Name: <p>${data.company}</p></h3>
-    <h3>Your Message: <p>${data.message}</p></h3>
-  `;
-}
+      // Show the display section
+      document.getElementById('showData').style.display = 'block';
+  };
+
+  // Assuming you have a form with id="contactForm"
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      submitForm();
+  });
+});
