@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #EAF8FF;
+}
+
+footer {
+    position: relative;
+    background: #140B5C;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 130px !important;
+  }
+
+.container-gallery {
+    margin-top: 187px;
+}
+
+
+.container-gal1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container-gal1 .card-gal {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container-gal1 .card-gal:hover {
+    height: 400px;
+}
+
+.container-gal1 .card-gal .imgbox-1 {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-gal1 .card-gal:hover .imgbox-1{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container-gal1 .card-gal .imgbox-1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-gal1 .card-gal .content-se {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-gal1 .card-gal:hover .content-se {
+    top: 130px;
+    height: 250px;
+}
+
+.container-gal1 .card-gal .content-se h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container-gal1 .card-gal .content-se p {
+    color: #333;
+}
+
+.container-gal1 .card-gal .content-se a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.container-gal1 .card-gal .content-se a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .container-gal1 .card-gal {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container-gal1 .card-gal .imgbox-1 {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container-gal1 .card-gal .content-se p {
+        font-size: 0.8rem;
+    }
+
+    .container-gal1 .card-gal .content-se a {
+        font-size: 0.9rem;
+    }
+}
+
+  
+ 

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
               message: document.getElementById('message').value,
           };
 
-          const response = await axios.post('magenta-rose-raven-hat.cyclic.app/api/contact/submit', formData);
+          const response = await axios.post('https://magenta-rose-raven-hat.cyclic.app/api/contact/submit', formData);
 
           updateDisplay(response.data);
       } catch (error) {
