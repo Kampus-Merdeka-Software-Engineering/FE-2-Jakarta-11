@@ -24,8 +24,18 @@ footer {
     margin-top: 130px !important;
   }
 
+
+
+.container-gallery h1 {
+    display: flex;
+    padding: 40px 0;
+    color: #000000;
+    font-size: 35px;
+    justify-content: center;
+}
+
 .container-gallery {
-    margin-top: 187px;
+    margin-top: 117px;
 }
 
 
