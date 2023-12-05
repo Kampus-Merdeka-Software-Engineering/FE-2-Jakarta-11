@@ -28,7 +28,6 @@ body {
 .testimonials-wrapper {
     display: grid;
     gap: 25px;
-    align-items: center; /* Pusatkan elemen dalam container */
     grid-template-columns: repeat(2, 1fr);
     padding: 0 95px;
 }
