@@ -480,11 +480,7 @@ h2 {
     margin: none;
     font-size: 12px
   }
-
-  .show-data {
-    height: 410px;
-  }
-
+  
   .flex_space1 {
     gap: 12px;
     justify-content: flex-start;
