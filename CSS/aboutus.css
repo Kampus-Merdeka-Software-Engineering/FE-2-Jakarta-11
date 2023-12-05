@@ -388,6 +388,339 @@ img {
   grid-column: span 3;
 }
 
+
+/* =========== */
+/* Our Journey */
+/* =========== */
+
+.timeline-container {
+  margin-top: 140px;
+}
+
+.timeline-container h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2.6rem;
+  color: black;
+}
+
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  color: #004AAD;
+}
+
+.timeline-header__title {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.timeline-header__subtitle {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #004AAD;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #004AAD;
+  border: 4x solid #004AAD;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline__content {
+  padding: 20px 30px;
+  background: transparent;
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.timeline__content h2 {
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+  color: #004AAD;
+}
+
+.timeline__content-title span {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.timeline__content-desc {
+  margin: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: normal;
+  line-height: 25px;
+  text-align: center;
+  color: black;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 27px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border-width: 10px 0 10px 10px;
+}
+
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 27px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border-width: 10px 0 10px 10px;
+}
+
+.right::after {
+  left: -13px;
+}
+
+
+
+/* Media Queries */
+/* Tablet */
+@media (max-width: 768px) {
+  #about.about {
+    padding-top: 0px;
+  }
+
+  .about .row {
+    flex-direction: column;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .about .row .content-kedua {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .about .row .content-kedua h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .about .row .content-kedua p {
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .about-img img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .team h2 {
+    font-size: 2rem;
+  }
+
+  .team p {
+    padding: 20px;
+    margin-top: -20px;
+  }
+
+  .team .row {
+    margin-top: 2rem;
+  }
+
+  .team .row .team-card {
+    width: 180px;
+    padding-bottom: 3rem;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .timeline-container h2 {
+    font-size: 2rem;
+    margin-bottom: 3px;
+  }
+
+  .timeline-header__title {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  #about.about {
+    padding-top: 0px;
+  }
+
+  .about .row {
+    flex-direction: column;
+  }
+
+  .about .row .about-img img {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .about .row .content-kedua {
+    padding: 20px;
+  }
+
+  .about .row .content-kedua h2 {
+    font-size: 30px;
+  }
+
+  .about .row .content-kedua p {
+    font-size: 13px;
+  }
+
+  .team p {
+    font-size: 15px;
+  }
+
+  .timeline::after {
+    left: 26px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item::before {
+    left: 50px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 10px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .timeline-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+  }
+
+  .timeline-header__title {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .timeline__content-title span {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    transition: 0.4s;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .timeline__content-desc {
+    margin: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+
 /*========== FOOTER ==========*/
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
