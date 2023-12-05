@@ -287,6 +287,7 @@ form .primary-btn {
 }
 
 .sign-box {
+  min-width: 430px;
   width: 50%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 40px;
@@ -472,15 +473,16 @@ h2 {
 /*----------show-data---------*/
 @media (max-width: 768px) {
   .show-data .sign-box {
-    width: 90%;
-    height: 425px;
+    width: 50%;
+    height: 426px;
+    min-width: 400px
   }
 
   .sign-box {
     margin: none;
     font-size: 12px
   }
-  
+
   .flex_space1 {
     gap: 12px;
     justify-content: flex-start;
