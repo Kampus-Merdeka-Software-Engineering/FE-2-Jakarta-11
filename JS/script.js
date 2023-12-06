@@ -199,12 +199,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Fungsi untuk untuk clone dan copy dengan class yang dipilih
 var copy = document.querySelector(".logos-slide").cloneNode(true);
       document.querySelector(".logos").appendChild(copy);
 
 
-// AOS 
-
+// Fungsi untuk mencegah konflik antara transisition dengan animasi data AOS
       document.addEventListener('aos:in', ({ detail }) => {
         const animatedElement = detail;
         animatedElement.classList.add('aos-entered');
