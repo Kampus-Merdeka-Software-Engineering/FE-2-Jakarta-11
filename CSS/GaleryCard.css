@@ -22,7 +22,7 @@ footer {
     bottom: 0;
     left: 0;
     margin-top: 130px !important;
-  }
+}
 
 
 
@@ -90,7 +90,7 @@ footer {
     transition: 0.5s;
 }
 
-.container-gal1 .card-gal:hover .imgbox-1{
+.container-gal1 .card-gal:hover .imgbox-1 {
     top: -100px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
@@ -149,15 +149,75 @@ footer {
     color: aqua;
 }
 
+.partnership-slider h1 {
+    display: flex;
+    padding: 40px 0;
+    color: #000000;
+    font-size: 2.6rem;
+    font-weight: 600;
+    justify-content: center;
+}
 
-@media (max-width: 960px) { 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #EAF8FF;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 80px;
+    margin: 0 40px;
+}
+
+@media (max-width: 960px) {
     .sub-gallery {
         font-size: 27px;
     }
 }
 
 
-@media (max-width: 876px) { 
+@media (max-width: 876px) {
     .sub-gallery {
         font-size: 24px;
     }
@@ -183,6 +243,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
-  
- 

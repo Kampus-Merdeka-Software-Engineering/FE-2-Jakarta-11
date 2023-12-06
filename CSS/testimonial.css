@@ -9,18 +9,30 @@ body {
 }
 
 
+.sub-testi {
+    display: flex;
+    color: #004AAD;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 0px 50px 85px 50px;
+}
+
 .testimonial-container {
-    width: 70%; /* Lebar maksimum container testimonial */
+    width: 70%;
+    /* Lebar maksimum container testimonial */
     margin: 190px auto;
     text-align: center;
-    background-color: #EAF8FF; /* Latar belakang semi-transparan agar teks lebih terbaca */
+    background-color: #EAF8FF;
+    /* Latar belakang semi-transparan agar teks lebih terbaca */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
 .testimonial-container h1 {
-    padding-bottom: 120px;
+    padding-bottom: 30px;
     padding-top: 30px;
     color: #000000;
     font-size: 35px;
@@ -34,16 +46,21 @@ body {
 }
 
 .testimonial {
-    flex: 1; /* Menyamakan lebar setiap kotak */
-    width: 100%; /* Memanjangkan kotak ke lebar layar */
+    flex: 1;
+    /* Menyamakan lebar setiap kotak */
+    width: 100%;
+    /* Memanjangkan kotak ke lebar layar */
     border: 1px solid rgb(246, 246, 246);
-    padding: 20px; /* Menambahkan ruang di dalam kotak */
+    padding: 20px;
+    /* Menambahkan ruang di dalam kotak */
     text-align: center;
     box-sizing: border-box;
     background: linear-gradient(135deg, #004AAD, #4cc9f0);
-    border-radius: 15px; /* Melengkungkan sudut kotak */
+    border-radius: 15px;
+    /* Melengkungkan sudut kotak */
     transition: transform 0.3s;
-    margin: 10px 0; /* Menambahkan jarak antara kotak */
+    margin: 10px 0;
+    /* Menambahkan jarak antara kotak */
     box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
@@ -53,59 +70,72 @@ body {
 
 .testimonial-info img {
     border-radius: 50%;
-    width: 100px; /* Mengubah ukuran avatar */
+    width: 100px;
+    /* Mengubah ukuran avatar */
     height: 100px;
-    margin-bottom: 15px; /* Menambahkan jarak di bawah avatar */
+    margin-bottom: 15px;
+    /* Menambahkan jarak di bawah avatar */
     object-fit: cover;
 }
 
 .customer-name {
     font-weight: bold;
-    font-size: 1.2em; /* Memperbesar ukuran nama */
+    font-size: 1.2em;
+    /* Memperbesar ukuran nama */
     color: #ffffff;
 }
 
 .testimonial-text {
-    margin: 15px 0; /* Menambahkan jarak pada teks testimonial */
-    font-size: 1em; /* Memperbesar ukuran teks testimonial */
+    margin: 15px 0;
+    /* Menambahkan jarak pada teks testimonial */
+    font-size: 1em;
+    /* Memperbesar ukuran teks testimonial */
     color: #ffffff;
 }
 
 .rating {
     color: #f8d32b;
-    font-size: 28px; /* Memperbesar ukuran bintang rating */
+    font-size: 28px;
+    /* Memperbesar ukuran bintang rating */
     margin-bottom: 15px;
 }
 
 .star {
     color: #f8d32b;
-    font-size: 24px; /* Memperbesar ukuran bintang */
+    font-size: 24px;
+    /* Memperbesar ukuran bintang */
     margin-right: 5px;
 }
 
 
+@media (max-width: 960px) {
+    .sub-testi {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 876px) {
+    .sub-testi {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 819px) {
     .testimonials-wrapper {
         display: flex;
-    align-items: center;
-    flex-direction: column;    
+        align-items: center;
+        flex-direction: column;
     }
-    
-    
 }
 
 @media (max-width: 500px) {
     .testimonial-container {
         padding: 0px;
         width: 95%;
-     }
+    }
 
     .testimonials-wrapper {
         padding: 0 25px;
     }
-
- 
-    
-    
-    
 }

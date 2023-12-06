@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color : #EAF8FF;
+  background-color: #EAF8FF;
 }
 
 /* ================================ */
@@ -220,7 +220,7 @@ form span label {
   border-color: rgb(0, 170, 255);
 }
 
-.inputLast  as textarea:focus {
+.inputLast as textarea:focus {
   border-color: rgb(0, 170, 255);
 }
 
@@ -522,7 +522,7 @@ h2 {
     justify-content: flex-end;
     justify-items: start;
   }
-  
+
 
 
 }

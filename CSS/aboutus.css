@@ -341,7 +341,8 @@ img {
 .member__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem; /* Jarak antar member jika diinginkan */
+  gap: 1rem;
+  /* Jarak antar member jika diinginkan */
   justify-content: center;
 }
 
@@ -353,7 +354,8 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
   padding: 0.75rem;
-  margin-bottom: var(--mb-2); /* Jarak antar member jika diinginkan */
+  margin-bottom: var(--mb-2);
+  /* Jarak antar member jika diinginkan */
 }
 
 .member__img {
@@ -771,6 +773,7 @@ img {
 
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px) {
+
   .home__container,
   .about__container,
   .app__container {
@@ -797,6 +800,7 @@ img {
     grid-template-columns: 1.75fr 1fr;
     align-items: center;
   }
+
   .since__button {
     justify-self: center;
   }
@@ -814,13 +818,16 @@ img {
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     display: flex;
   }
+
   .nav__item {
     margin-left: var(--mb-5);
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
@@ -844,9 +851,11 @@ img {
     grid-template-columns: repeat(3, 210px);
     column-gap: 4rem;
   }
+
   .member__content {
     padding: 1.5rem;
   }
+
   .member__img {
     width: 130px;
   }
