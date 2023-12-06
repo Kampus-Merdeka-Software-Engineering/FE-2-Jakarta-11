@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color : #EAF8FF;
 }
 
 /* ================================ */
@@ -167,6 +168,7 @@ form input {
   border: 2px solid #ececec;
   margin-top: 10px;
   resize: none;
+  padding: 20px;
 }
 
 .contact span {
@@ -218,7 +220,7 @@ form span label {
   border-color: rgb(0, 170, 255);
 }
 
-.inputLast textarea:focus {
+.inputLast  as textarea:focus {
   border-color: rgb(0, 170, 255);
 }
 

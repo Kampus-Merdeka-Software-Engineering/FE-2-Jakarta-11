@@ -258,6 +258,7 @@ img {
 }
 
 /*========== HOME ==========*/
+
 .home__container {
   height: calc(100vh - var(--header-height));
   align-content: center;
@@ -874,6 +875,6 @@ img {
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   .home__container {
-    height: 640px;
+    height: 745px;
   }
 }
