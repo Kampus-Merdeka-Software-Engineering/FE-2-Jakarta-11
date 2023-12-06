@@ -10,6 +10,9 @@
   <!-- Styling -->
   <link rel="stylesheet" href="CSS/style.css" />
 
+  <!--========== AOS STYLE ==========-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Favicon-->
   <link rel="icon" href="assets/Icon-javajoya.png" type="image/x-icon" />
 
@@ -61,7 +64,11 @@
 
 <section class="testimonial-form">
     <div class="testimonial-container">
-        <h1>Testimonials</h1>
+        <h1  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Testimonials</h1>
+        <h2 class="sub-testi" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+          "Unveiling Experiences:  Voices of Satisfied Travelers"</h2>
+          <!-- <h2 class="sub-testi" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+           Voices of Satisfied Travelers"</h2> -->
         <div class="testimonials-wrapper">
             <div class="testimonial">
                 <div class="testimonial-info">
@@ -221,6 +228,13 @@
     </div>
   </footer>
   <!-- END FOOTER -->
+
+    <!-- Script Animated on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
   <script src="JS/script.js"></script>
