@@ -138,7 +138,7 @@ img {
 
 /*========== LAYOUT ==========*/
 .bd-container {
-  max-width: 960px;
+  max-width: 1360px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -877,7 +877,7 @@ img {
 
   .about__container,
   .app__container {
-    column-gap: 7rem;
+    column-gap: 1rem;
   }
 }
 
