@@ -201,3 +201,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var copy = document.querySelector(".logos-slide").cloneNode(true);
       document.querySelector(".logos").appendChild(copy);
+
+
+// AOS 
+
+      document.addEventListener('aos:in', ({ detail }) => {
+        const animatedElement = detail;
+        animatedElement.classList.add('aos-entered');
+      });
