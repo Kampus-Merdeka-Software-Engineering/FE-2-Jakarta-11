@@ -26,6 +26,17 @@ footer {
 
 
 
+
+.sub-gallery {
+    display: flex;
+    color: #004AAD;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 0px 20px 20px 20px;
+}
+
 .container-gallery h1 {
     display: flex;
     padding: 40px 0;
@@ -65,7 +76,7 @@ footer {
 }
 
 .container-gal1 .card-gal:hover {
-    height: 400px;
+    height: 550px;
 }
 
 .container-gal1 .card-gal .imgbox-1 {
@@ -107,8 +118,9 @@ footer {
 
 .container-gal1 .card-gal:hover .content-se {
     top: 130px;
-    height: 250px;
+    height: 450px;
 }
+
 
 .container-gal1 .card-gal .content-se h2 {
     font-size: 1.5rem;
@@ -136,6 +148,21 @@ footer {
     background-color: #000000;
     color: aqua;
 }
+
+
+@media (max-width: 960px) { 
+    .sub-gallery {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 876px) { 
+    .sub-gallery {
+        font-size: 24px;
+    }
+}
+
 
 @media (max-width: 480px) {
     .container-gal1 .card-gal {
