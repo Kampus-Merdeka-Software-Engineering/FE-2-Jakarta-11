@@ -21,11 +21,9 @@ body {
 
 .testimonial-container {
     width: 70%;
-    /* Lebar maksimum container testimonial */
     margin: 190px auto;
     text-align: center;
     background-color: #EAF8FF;
-    /* Latar belakang semi-transparan agar teks lebih terbaca */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
@@ -47,20 +45,15 @@ body {
 
 .testimonial {
     flex: 1;
-    /* Menyamakan lebar setiap kotak */
     width: 100%;
-    /* Memanjangkan kotak ke lebar layar */
     border: 1px solid rgb(246, 246, 246);
     padding: 20px;
-    /* Menambahkan ruang di dalam kotak */
     text-align: center;
     box-sizing: border-box;
     background: linear-gradient(135deg, #004AAD, #4cc9f0);
     border-radius: 15px;
-    /* Melengkungkan sudut kotak */
     transition: transform 0.3s;
     margin: 10px 0;
-    /* Menambahkan jarak antara kotak */
     box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
@@ -71,39 +64,32 @@ body {
 .testimonial-info img {
     border-radius: 50%;
     width: 100px;
-    /* Mengubah ukuran avatar */
     height: 100px;
     margin-bottom: 15px;
-    /* Menambahkan jarak di bawah avatar */
     object-fit: cover;
 }
 
 .customer-name {
     font-weight: bold;
     font-size: 1.2em;
-    /* Memperbesar ukuran nama */
     color: #ffffff;
 }
 
 .testimonial-text {
     margin: 15px 0;
-    /* Menambahkan jarak pada teks testimonial */
     font-size: 1em;
-    /* Memperbesar ukuran teks testimonial */
     color: #ffffff;
 }
 
 .rating {
     color: #f8d32b;
     font-size: 28px;
-    /* Memperbesar ukuran bintang rating */
     margin-bottom: 15px;
 }
 
 .star {
     color: #f8d32b;
     font-size: 24px;
-    /* Memperbesar ukuran bintang */
     margin-right: 5px;
 }
 

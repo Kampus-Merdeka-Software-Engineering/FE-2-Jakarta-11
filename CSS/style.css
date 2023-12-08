@@ -482,13 +482,13 @@ header {
 
   .section-about-us .svg-bg-1 {
     height: 1096px;
-}
+  }
 
-.main-about .pict-aboutus {
-  box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
-  -webkit-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
-  -moz-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
-}
+  .main-about .pict-aboutus {
+    box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+    -webkit-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+    -moz-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
+  }
 
 }
 
@@ -515,23 +515,18 @@ header {
     transform: translateY(-80%);
   }
 
- .main-about .pict-aboutus {
+  .main-about .pict-aboutus {
     box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
     -webkit-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
     -moz-box-shadow: 59px 11px 0px -40px rgba(0, 74, 173, 0.75);
   }
-
 }
-
-
 
 
 
 /* =================== */
 /*  FORM SEARCH STYLE  */
 /* =================== */
-
-
 
 .search {
   margin-top: 88px;
@@ -700,7 +695,6 @@ header {
 html {
   scroll-behavior: smooth;
 }
-
 
 /* ===================================== */
 /* END STYLING SECTION 1 (GAMBAR COVER)  */
@@ -1540,11 +1534,8 @@ footer .bottom-details .bottom_text {
 
 /* text responsive */
 
-
-
-
-@media screen and  (max-width: 991px) {
-   .text-bg1-home {
+@media screen and (max-width: 991px) {
+  .text-bg1-home {
     font-size: 35px;
     padding-left: 74vh;
   }
@@ -1577,7 +1568,7 @@ footer .bottom-details .bottom_text {
 
 }
 
-@media screen and  (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   .text-bg1-home {
     font-size: 26px;
@@ -1594,7 +1585,7 @@ footer .bottom-details .bottom_text {
   }
 }
 
-@media screen and  (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .text-bg1-home {
     font-size: 26px;
     padding-left: 30vh;
@@ -1610,7 +1601,7 @@ footer .bottom-details .bottom_text {
   }
 }
 
-@media screen and  (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .text-bg1-home {
     font-size: 26px;
     padding-left: 20vh;
@@ -1626,7 +1617,7 @@ footer .bottom-details .bottom_text {
   }
 }
 
-@media screen and  (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .text-bg1-home {
     font-size: 26px;
     padding-left: 10vh;
@@ -1642,7 +1633,7 @@ footer .bottom-details .bottom_text {
   }
 }
 
-@media screen and  (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .text-bg1-home {
     font-size: 22px;
     padding-left: 10vh;

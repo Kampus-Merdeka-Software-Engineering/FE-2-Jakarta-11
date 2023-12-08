@@ -26,7 +26,7 @@ footer {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 .sub-gallery {
@@ -78,7 +78,7 @@ html {
 
 .container-gal1 .card-gal.aos-entered {
     transition: 0.5s;
-  }
+}
 
 .container-gal1 .card-gal:hover {
     height: 550px;
