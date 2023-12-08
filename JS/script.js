@@ -1,30 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   function formatDate(date) {
     let d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
+      month = "" + (d.getMonth() + 1),
+      day = "" + d.getDate(),
+      year = d.getFullYear();
 
-    if (month.length < 2) 
-        month = '0' + month;
-    if (day.length < 2) 
-        day = '0' + day;
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
 
-    return [year, month, day].join('-');
+    return [year, month, day].join("-");
   }
 
-  const checkInInput = document.getElementById('check-in');
-  const checkOutInput = document.getElementById('check-out');
+  const checkInInput = document.getElementById("check-in");
+  const checkOutInput = document.getElementById("check-out");
 
   if (checkInInput) {
-    checkInInput.addEventListener('input', function() {
+    checkInInput.addEventListener("input", function () {
       const selectedDate = new Date(checkInInput.value);
       checkInInput.value = formatDate(selectedDate);
     });
   }
 
   if (checkOutInput) {
-    checkOutInput.addEventListener('input', function() {
+    checkOutInput.addEventListener("input", function () {
       const selectedDate = new Date(checkOutInput.value);
       checkOutInput.value = formatDate(selectedDate);
     });
@@ -76,9 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
       timeoutId;
     let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-    carouselChildrens.slice(-cardPerView).reverse().forEach((card) => {
-      carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-    });
+    carouselChildrens
+      .slice(-cardPerView)
+      .reverse()
+      .forEach((card) => {
+        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+      });
 
     carouselChildrens.slice(0, cardPerView).forEach((card) => {
       carousel.insertAdjacentHTML("beforeend", card.outerHTML);
@@ -90,7 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     arrowBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        carousel.scrollLeft +=
+          btn.id == "left" ? -firstCardWidth : firstCardWidth;
       });
     });
 
@@ -116,7 +118,10 @@ document.addEventListener('DOMContentLoaded', function() {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
         carousel.classList.remove("no-transition");
-      } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+      } else if (
+        Math.ceil(carousel.scrollLeft) ===
+        carousel.scrollWidth - carousel.offsetWidth
+      ) {
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
@@ -127,7 +132,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const autoPlay = () => {
       if (window.innerWidth < 800 || !isAutoPlay) return;
-      timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+      timeoutId = setTimeout(
+        () => (carousel.scrollLeft += firstCardWidth),
+        2500
+      );
     };
 
     autoPlay();
@@ -141,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const questions = document.querySelectorAll(".question-answer");
 
-  questions.forEach(function(question) {
+  questions.forEach(function (question) {
     const btn = question.querySelector(".question-btn");
-    btn.addEventListener("click", function() {
-      questions.forEach(function(item) {
+    btn.addEventListener("click", function () {
+      questions.forEach(function (item) {
         if (item !== question) {
           item.classList.remove("show-text");
         }
@@ -198,14 +206,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
 // Fungsi untuk untuk clone dan copy dengan class yang dipilih
 var copy = document.querySelector(".logos-slide").cloneNode(true);
-      document.querySelector(".logos").appendChild(copy);
-
+document.querySelector(".logos").appendChild(copy);
 
 // Fungsi untuk mencegah konflik antara transisition dengan animasi data AOS
-      document.addEventListener('aos:in', ({ detail }) => {
-        const animatedElement = detail;
-        animatedElement.classList.add('aos-entered');
-      });
+document.addEventListener("aos:in", ({ detail }) => {
+  const animatedElement = detail;
+  animatedElement.classList.add("aos-entered");
+});
